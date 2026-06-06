@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Order Online - Goyal Bakers and Confectioners</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#fff8f7",
+                      "inverse-primary": "#ffb4ab",
+                      "surface-variant": "#eddfdf",
+                      "on-surface-variant": "#5a403d",
+                      "outline-variant": "#e3beba",
+                      "on-tertiary-container": "#fcc4c2",
+                      "outline": "#8e706c",
+                      "error": "#ba1a1a",
+                      "on-surface": "#211a1a",
+                      "secondary": "#635e53",
+                      "tertiary-fixed-dim": "#f0b9b7",
+                      "primary-container": "#b01e1e",
+                      "on-secondary-fixed-variant": "#4b463c",
+                      "primary": "#8c000b",
+                      "on-secondary-container": "#696458",
+                      "primary-fixed-dim": "#ffb4ab",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#e9e2d3",
+                      "inverse-on-surface": "#fbeeed",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#311212",
+                      "surface-bright": "#fff8f7",
+                      "on-primary-container": "#ffc4bd",
+                      "tertiary-container": "#794f4e",
+                      "primary-fixed": "#ffdad6",
+                      "surface-container-high": "#f3e5e5",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed": "#e9e2d3",
+                      "surface-container-low": "#fef0f0",
+                      "on-tertiary-fixed-variant": "#633c3c",
+                      "surface-container-highest": "#eddfdf",
+                      "inverse-surface": "#362f2f",
+                      "surface-container": "#f8ebea",
+                      "on-primary-fixed-variant": "#93000d",
+                      "on-background": "#211a1a",
+                      "surface-dim": "#e4d7d7",
+                      "secondary-fixed-dim": "#cdc6b8",
+                      "surface-tint": "#b62322",
+                      "background": "#fff8f7",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#410002",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#5f3838",
+                      "tertiary-fixed": "#ffdad8",
+                      "on-secondary-fixed": "#1e1b13"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-padding": "80px",
+                      "gutter": "24px",
+                      "container-max-width": "1200px",
+                      "margin-desktop": "48px",
+                      "margin-mobile": "16px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Epilogue"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg-mobile": [
+                              "Epilogue"
+                      ],
+                      "headline-md": [
+                              "Epilogue"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-bold": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Epilogue"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .custom-shadow {
+            box-shadow: 0px 4px 20px rgba(140, 0, 11, 0.05);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 shadow-sm bg-surface dark:bg-inverse-surface">
+<div class="flex flex-col items-center w-full px-margin-desktop py-4 max-w-container-max-width mx-auto">
+<div class="flex items-center justify-between w-full mb-4">
+<a class="font-display-lg text-headline-lg font-extrabold text-primary dark:text-primary-fixed" href="index.html">Goyal Bakers and Confectioners</a>
+<div class="hidden md:flex items-center gap-4 bg-surface-container-low rounded-full px-4 py-2 border border-outline-variant">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md text-on-surface w-48 placeholder:text-outline" placeholder="Search" type="text">
+<span class="material-symbols-outlined text-primary bg-primary-container text-on-primary-container rounded-full p-1 cursor-pointer">mic</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-bold hidden md:inline">Login/Signup</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-center gap-6 md:gap-8 w-full overflow-x-auto pb-2 scrollbar-hide">
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="index.html">Home</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="menu.html">Menu</a>
+<a class="font-label-bold text-label-bold text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 whitespace-nowrap hover:text-primary dark:hover:text-primary-fixed transition-all duration-200" href="order.html">Order Online</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="about.html">About</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="contact.html">Contact</a>
+<button class="bg-primary text-on-primary font-label-bold px-6 py-2 rounded-full hover:bg-on-primary-fixed-variant transition-colors ml-auto hidden md:block" onclick="window.location.href='order.html'">ORDER NOW</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-container-max-width mx-auto w-full px-margin-mobile md:px-margin-desktop py-section-padding">
+<div class="mb-12">
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">Complete Your Order</h1>
+<p class="text-on-surface-variant font-body-md text-body-md">We're almost there! Please provide your details below.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Forms -->
+<div class="lg:col-span-7 space-y-8">
+<!-- Delivery Details Form -->
+<section class="bg-surface-container-lowest rounded-[32px] p-8 custom-shadow">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+                        Delivery Details
+                    </h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-bold font-label-bold text-on-surface mb-2" for="fullName">Full Name</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent text-body-md" id="fullName" placeholder="Enter your full name" type="text">
+</div>
+<div>
+<label class="block text-label-bold font-label-bold text-on-surface mb-2" for="phone">Phone Number</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent text-body-md" id="phone" placeholder="+91" type="tel">
+</div>
+</div>
+<div>
+<label class="block text-label-bold font-label-bold text-on-surface mb-2" for="address">Delivery Address (Rohini)</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent text-body-md" id="address" placeholder="Enter complete address in Rohini..." rows="3"></textarea>
+</div>
+<div>
+<label class="block text-label-bold font-label-bold text-on-surface mb-2" for="instructions">Special Instructions (Optional)</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent text-body-md" id="instructions" placeholder="E.g., Ring the bell twice, leave at reception..." type="text">
+</div>
+</form>
+</section>
+<!-- Payment Method Selection -->
+<section class="bg-surface-container-lowest rounded-[32px] p-8 custom-shadow">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">payments</span>
+                        Payment Method
+                    </h2>
+<div class="space-y-4">
+<label class="flex items-center justify-between p-4 border-2 border-primary bg-primary-fixed/30 rounded-xl cursor-pointer transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">qr_code_scanner</span>
+<span class="font-label-bold text-body-lg text-on-surface">UPI / QR Code</span>
+</div>
+<input checked="" class="text-primary focus:ring-primary w-5 h-5" name="payment" type="radio">
+</label>
+<label class="flex items-center justify-between p-4 border border-outline-variant rounded-xl cursor-pointer hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">credit_card</span>
+<span class="font-label-bold text-body-lg text-on-surface">Credit / Debit Card</span>
+</div>
+<input class="text-primary focus:ring-primary w-5 h-5" name="payment" type="radio">
+</label>
+<label class="flex items-center justify-between p-4 border border-outline-variant rounded-xl cursor-pointer hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">money</span>
+<span class="font-label-bold text-body-lg text-on-surface">Cash on Delivery (COD)</span>
+</div>
+<input class="text-primary focus:ring-primary w-5 h-5" name="payment" type="radio">
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest rounded-[32px] p-8 custom-shadow sticky top-32">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 border-b border-outline-variant pb-4">Order Summary</h2>
+<!-- Items -->
+<div class="space-y-6 mb-8">
+<!-- Item 1 -->
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-2xl overflow-hidden bg-surface-variant shrink-0">
+<img alt="Signature Truffle Cake" class="w-full h-full object-cover" data-alt="A high-quality, appetizing close-up photograph of a decadent Signature Truffle Cake. The cake features rich, glossy dark chocolate ganache dripping enticingly down its sides. It is placed on a pristine white ceramic plate in a bright, modern bakery setting with soft, warm lighting that highlights the luxurious texture of the chocolate. The overall aesthetic is premium, indulgent, and perfectly aligns with a light-mode, artisanal food presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR3JEC3QSxblCElsPqBDYfOJzZg0LXBDYpiuULchAPckzc3Y2HtIeh8AaWcoNtOQNchIkwFZfldqfi_SfgbTOsLv4qzJhFq8cruCavDV4RdZp0_wyj9eqDlhuFdCqWaYsV_wfyLhEza93I_oYxwT6OxE96Bgbg8xIZewzXp9avbNh1O1JqoCpeGOONfbbBfmVMnnPArPPlxDVmPepJQdbHYUWg7QYzMGB1lXz5DnaK05UvERhRDxPKclAdTC-KvmOFKmy93CxCxx8w">
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-label-bold text-body-lg text-on-surface">Signature Truffle Cake</h3>
+<p class="text-body-md text-on-surface-variant">500g, Eggless</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="text-body-md text-on-surface-variant">Qty: 1</span>
+<span class="font-label-bold text-body-lg text-on-surface">₹549</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-2xl overflow-hidden bg-surface-variant shrink-0">
+<img alt="Artisanal Sourdough" class="w-full h-full object-cover" data-alt="A close-up, premium photograph of a freshly baked Artisanal Sourdough loaf. The bread has a deeply caramelized, crusty exterior with beautiful scoring patterns and a soft, airy crumb slightly visible. It rests on a rustic wooden cutting board in a brightly lit, modern kitchen environment with subtle warm tones. The lighting emphasizes the tactile, hand-crafted quality of the bread, fitting seamlessly into a sophisticated, light-mode culinary design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDibq_LJVEu9TlB1qixve5_iO0Pqp2NB6RtRXw3wEicmr7-a79iKAzEnJP1Qu6be4w_ABNUOEaRGeMXQjnsHMI6on-q7Q_MOcPQegQpE2OiV_W_Y__bNb7nU5CMLFcFLeyUkbb1HzfhdMGwuO093gr0bbD2aZjkpE1-eX8ZtMYSQIvS2X2Ki0oIXlw_6_b_XGwOAzV5X78bZECuCk-y53YlycHjdC58R8C_ttR8Y_xmz2yMOHwT5L2lZJE_-kH-gQjWtJFT2zJUvCAf">
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-label-bold text-body-lg text-on-surface">Artisanal Sourdough</h3>
+<p class="text-body-md text-on-surface-variant">Freshly Baked</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="text-body-md text-on-surface-variant">Qty: 2</span>
+<span class="font-label-bold text-body-lg text-on-surface">₹240</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Totals -->
+<div class="space-y-3 border-t border-outline-variant pt-6 mb-6">
+<div class="flex justify-between text-body-lg text-on-surface-variant">
+<span class="">Subtotal</span>
+<span class="">₹789</span>
+</div>
+<div class="flex justify-between text-body-lg text-on-surface-variant">
+<span class="">Delivery Fee</span>
+<span class="">₹40</span>
+</div>
+<div class="flex justify-between font-headline-md text-headline-md text-primary mt-4 pt-4 border-t border-outline-variant">
+<span class="">Total</span>
+<span class="">₹829</span>
+</div>
+</div>
+<!-- Delivery Badge -->
+<div class="bg-secondary-container text-on-secondary-container rounded-xl p-4 flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<div>
+<p class="font-label-bold text-label-bold">Estimated Delivery</p>
+<p class="text-body-md">Today, 45 - 60 mins</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary text-on-primary font-headline-md text-[20px] py-4 rounded-full hover:bg-on-primary-fixed-variant hover:scale-[1.02] transition-all duration-200 shadow-md">
+                        Place Order
+                    </button>
+<p class="text-center text-label-sm text-on-surface-variant mt-4 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                        Secure Checkout
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[100px] mt-section-padding bg-surface-variant dark:bg-surface-container-highest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max-width mx-auto">
+<div class="flex flex-col gap-4">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed" href="index.html">Goyal Bakers and Confectioners</a>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface">Your Trusted FSSAI Certified Online Bakery for Every Celebration. Shop 27 &amp; 28, CSC-02, DDA Market, Sector-13, Rohini, New Delhi.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Links</h4>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors dark:hover:text-primary-fixed underline decoration-2 underline-offset-4" href="menu.html">Menu</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors dark:hover:text-primary-fixed underline decoration-2 underline-offset-4" href="about.html">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors dark:hover:text-primary-fixed underline decoration-2 underline-offset-4" href="contact.html">Contact</a><p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface mt-2">+91 9911613932</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors dark:hover:text-primary-fixed underline decoration-2 underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary transition-colors dark:hover:text-primary-fixed underline decoration-2 underline-offset-4" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Subscribe</h4>
+<div class="flex gap-2">
+<input class="bg-surface border border-outline-variant rounded-full px-4 py-2 w-full focus:ring-2 focus:ring-primary focus:border-transparent text-body-md" placeholder="Enter Email Address" type="email">
+<button class="bg-primary text-on-primary font-label-bold px-4 py-2 rounded-full hover:bg-on-primary-fixed-variant transition-colors whitespace-nowrap">SUBSCRIBE</button>
+</div>
+</div>
+</div>
+<div class="text-center py-6 border-t border-outline-variant/30 text-on-surface-variant font-body-md">© 2024 Goyal Bakers and Confectioners. All rights reserved.</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body></html>

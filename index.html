@@ -1,0 +1,550 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Welcome to Goyal Bakers and Confectioners, your destination for decadent chocolate bliss, fresh cakes, and premium baked goods in Rohini, New Delhi. Order online for quick delivery.">
+<title>Goyal Bakers and Confectioners</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#fff8f7",
+                    "inverse-primary": "#ffb4ab",
+                    "surface-variant": "#eddfdf",
+                    "on-surface-variant": "#5a403d",
+                    "outline-variant": "#e3beba",
+                    "on-tertiary-container": "#fcc4c2",
+                    "outline": "#8e706c",
+                    "error": "#ba1a1a",
+                    "on-surface": "#211a1a",
+                    "secondary": "#635e53",
+                    "tertiary-fixed-dim": "#f0b9b7",
+                    "primary-container": "#b01e1e",
+                    "on-secondary-fixed-variant": "#4b463c",
+                    "primary": "#8c000b",
+                    "on-secondary-container": "#696458",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#e9e2d3",
+                    "inverse-on-surface": "#fbeeed",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#311212",
+                    "surface-bright": "#fff8f7",
+                    "on-primary-container": "#ffc4bd",
+                    "tertiary-container": "#794f4e",
+                    "primary-fixed": "#ffdad6",
+                    "surface-container-high": "#f3e5e5",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#e9e2d3",
+                    "surface-container-low": "#fef0f0",
+                    "on-tertiary-fixed-variant": "#633c3c",
+                    "surface-container-highest": "#eddfdf",
+                    "inverse-surface": "#362f2f",
+                    "surface-container": "#f8ebea",
+                    "on-primary-fixed-variant": "#93000d",
+                    "on-background": "#211a1a",
+                    "surface-dim": "#e4d7d7",
+                    "secondary-fixed-dim": "#cdc6b8",
+                    "surface-tint": "#b62322",
+                    "background": "#fff8f7",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#410002",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#5f3838",
+                    "tertiary-fixed": "#ffdad8",
+                    "on-secondary-fixed": "#1e1b13"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-padding": "80px",
+                    "gutter": "24px",
+                    "container-max-width": "1200px",
+                    "margin-desktop": "48px",
+                    "margin-mobile": "16px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Epilogue"
+                    ],
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg-mobile": [
+                            "Epilogue"
+                    ],
+                    "headline-md": [
+                            "Epilogue"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-bold": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Epilogue"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "56px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-bold": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 shadow-sm bg-surface dark:bg-inverse-surface">
+<div class="flex flex-col items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max-width mx-auto">
+<div class="flex w-full items-center justify-between mb-4 gap-2">
+<a class="font-display-lg-mobile md:font-display-lg text-xl md:text-headline-lg font-extrabold text-primary dark:text-primary-fixed leading-tight" href="index.html">Goyal Bakers & Confectioners</a>
+<div class="hidden md:flex items-center space-x-4">
+<div class="relative">
+<input class="pl-10 pr-4 py-2 rounded-full border border-outline-variant bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-body-md font-body-md" placeholder="Search" type="text">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+</button>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors flex items-center space-x-1" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="">Login/Signup</span>
+</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<nav class="hidden md:flex w-full items-center justify-between border-t border-outline-variant pt-4">
+<ul class="flex space-x-8 font-label-bold text-label-bold">
+<li class=""><a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1" href="index.html">Home</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="menu.html">Cakes</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="menu.html">Theme Cakes</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="menu.html">Desserts</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="#">Birthday</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="#">Hampers</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="#">Anniversary</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200" href="#">Occasions</a></li>
+</ul>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-container transition-colors shadow-sm" onclick="window.location.href='order.html'">ORDER NOW</button>
+</nav>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-section-padding">
+<div class="bg-primary text-on-primary rounded-[40px] md:rounded-[100px] overflow-hidden relative min-h-[350px] md:min-h-[500px] flex items-center p-6 md:p-16">
+<!-- Abstract waves background -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, transparent 20%, #ffffff 20%, #ffffff 21%, transparent 21%), radial-gradient(circle at 0% 100%, transparent 20%, #ffffff 20%, #ffffff 21%, transparent 21%); background-size: 100px 100px;"></div>
+<div class="relative z-10 w-full md:w-1/2">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-white">DECADENT<br>CHOCOLATE<br>BLISS!</h1>
+<p class="font-headline-md text-headline-md mb-8 text-primary-fixed">Satisfy Your Sweet Cravings</p>
+<div class="inline-block bg-white text-primary px-6 py-3 rounded-full font-label-bold text-label-bold">
+<span class="block text-xs uppercase opacity-70 mb-1">Special Offer</span>
+<span class="text-xl">SAVE 20%</span>
+</div>
+</div>
+<div class="hidden md:block absolute right-[-5%] top-1/2 -translate-y-1/2 w-[60%] h-[120%]">
+<div class="relative w-full h-full rounded-full border-8 border-white/20 overflow-hidden shadow-2xl">
+<img alt="A lavish, dark chocolate truffle cake dripping with glossy chocolate ganache, topped with fresh strawberries and raspberries. The cake sits on a rustic wooden board against a deep, warm background. The lighting is rich and moody, emphasizing the indulgent, premium quality of the bakery's signature dessert. Modern, appetizing food photography style." class="w-full h-full object-cover" data-alt="A lavish, dark chocolate truffle cake dripping with glossy chocolate ganache, topped with fresh strawberries and raspberries. The cake sits on a rustic wooden board against a deep, warm background. The lighting is rich and moody, emphasizing the indulgent, premium quality of the bakery's signature dessert. Modern, appetizing food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQNR2Ho1-MeU1SgW0pld5gRqlIcMCBiJ8ZbUKxGol9kbqfaFd_wSpTsoD5dMaHqFWwqLo1Itek7TFnmQ2WxVhEctJ9XwgeN9wZ4eSzpWA8_b1ufx_U0SsE-OUILVyhafe0MC7ZBewgYiDTfDv2RIpqc-OBowE-VPrlOV7k2-ARRUOzrQI8JIot49UC05OhdtkL8XNYkM5qv-DeUvNm5xJr4gmIBnIjXAoRnoocM9_db4_EXtlmTbS3qyeBQf0g5zATLkYM0WkGG7sH">
+</div>
+<!-- Floating smaller cakes -->
+<div class="absolute top-10 right-10 w-32 h-32 rounded-full border-4 border-white overflow-hidden shadow-lg transform rotate-12">
+<img alt="A small, molten chocolate lava cake with warm, gooey chocolate oozing from the center. Set on a clean white plate with a warm, minimalist background. The lighting highlights the glossy texture of the melted chocolate." class="w-full h-full object-cover" data-alt="A small, molten chocolate lava cake with warm, gooey chocolate oozing from the center. Set on a clean white plate with a warm, minimalist background. The lighting highlights the glossy texture of the melted chocolate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE-vVy-U5HWb9JQzIPwvWtWIM4CjIsFHu9Ebxcw4cxAuR8F5m6T7cfIFUIjLR8fswFz9xQoMHJl2xA1eGLtziObYxr2Kv9-Pn2c-PSx4O_0co4csm3nBAHgoHvFHtpsP-ddrY13SHARH8DSRzhuXz2CLnzGR04GhfVzchLotC0Vae1jGNsFFYwA_plprGm-mRr-2wHccZTKKJQR4r95fhKvf0WhE2jQSclZB7fOWRwM5JrMxwCf0QbhUTpUCm1dEP5mzgsBo0H4tat">
+</div>
+<div class="absolute bottom-20 right-20 w-32 h-32 rounded-full border-4 border-white overflow-hidden shadow-lg transform -rotate-12">
+<img alt="A slice of rich chocolate hazelnut cake with visible layers of frosting and nuts on top. Displayed elegantly to showcase the artisanal texture and premium ingredients. Bright, clean light mode aesthetic." class="w-full h-full object-cover" data-alt="A slice of rich chocolate hazelnut cake with visible layers of frosting and nuts on top. Displayed elegantly to showcase the artisanal texture and premium ingredients. Bright, clean light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM1pljwXGDWw9jcEtDHs_fsYelHzM-H5h4MmgAhMhVTDW2FS8FLo0bMxyTY4QKx0pvtIpKmZ6rTGs5BamDOGC-o81gYTfShpWAdFUUU-p-ai177IEvilTq1fMiXtZ75h6L_GaXHMQKtoOhM33t0PULEXobvtDtL1QBOcLpUXVPnXNluU7MeLr0fvMVDjUB6EW4xOqajzP51bM_Est_5rIIb_NO3XJuZ6_FUs8dgEJc82oemrxxh-dkqdM1Ns_7ke0jPsX_R4yVtVR9">
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Categories -->
+<section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Menu</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">What will you wish for?</p>
+</div>
+<div class="flex space-x-4 mt-4 md:mt-0 opacity-50">
+<span class="material-symbols-outlined text-3xl">cake</span>
+<span class="material-symbols-outlined text-3xl">bakery_dining</span>
+<span class="material-symbols-outlined text-3xl">local_cafe</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<!-- Category Item -->
+<div class="flex flex-col items-center group cursor-pointer text-center">
+<div class="w-24 h-24 rounded-3xl bg-surface-container-high flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors duration-300 shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors duration-300">cake</span>
+</div>
+<span class="block font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Classic</span>
+</div>
+<!-- Category Item -->
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-3xl bg-surface-container-high flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors duration-300 shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors duration-300">redeem</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Gourmet</span>
+</div>
+<!-- Category Item -->
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-3xl bg-surface-container-high flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors duration-300 shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors duration-300">icecream</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Desserts</span>
+</div>
+<!-- Category Item -->
+<div class="flex flex-col items-center group cursor-pointer">
+<div class="w-24 h-24 rounded-3xl bg-surface-container-high flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors duration-300 shadow-sm border border-surface-variant">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors duration-300">cookie</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Cookies</span>
+</div>
+</div>
+</section>
+<!-- Bestsellers Grid -->
+<section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-8 border-b border-surface-variant pb-4">Bestsellers from Across the Country</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-white rounded-3xl p-6 shadow-[0_4px_20px_rgba(140,0,11,0.05)] hover:shadow-[0_8px_30px_rgba(140,0,11,0.1)] transition-shadow duration-300 relative group">
+<button class="absolute top-4 left-4 text-outline-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-surface-container-low">
+<img alt="A pristine dark chocolate truffle cake with rich, glossy frosting, sitting on an elegant bakery display. The lighting is bright and appetizing, matching the warm cream and red color palette of the brand." class="w-full h-full object-cover" data-alt="A pristine dark chocolate truffle cake with rich, glossy frosting, sitting on an elegant bakery display. The lighting is bright and appetizing, matching the warm cream and red color palette of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwcreO5AGXdKiijuIJ2yK8BZCPjDw4SSwlkVQ9WpGD71hSdsRngwb223lJLZQbKbF2-G-PLRAvLs4yuZl-4U0YzE0jRX0YUOdytqueurssV-hXTpxDyhjEtTiGhZHnuj5u4BiCZRPN53SfxgQOUezM4Md166WUVYTc4bCjHL8pmdRB7LP7vuzuH1oJ7G3Voy1btRm6BadmSTsrQVikSnu1RdvExZspygH35ntdOCV1dNQ5l5gPNPtN4PdwnJDR8cjU8WdtFwliW_11">
+</div>
+<h3 class="font-label-bold text-label-bold text-on-surface mb-2 h-10">Rich Chocolate Truffle Cake</h3>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-bold text-label-bold text-primary">₹500</span>
+<span class="text-xs text-on-surface-variant line-through ml-2">₹599</span>
+<div class="flex text-yellow-400 text-xs mt-1">
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="text-on-surface-variant ml-1">(500)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-white rounded-3xl p-6 shadow-[0_4px_20px_rgba(140,0,11,0.05)] hover:shadow-[0_8px_30px_rgba(140,0,11,0.1)] transition-shadow duration-300 relative group">
+<button class="absolute top-4 left-4 text-outline-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-surface-container-low">
+<img alt="A decadent choco chip truffle cake decorated with large chocolate chunks and a smooth ganache finish. Isolated against a soft, bright background that highlights the appetizing texture. Premium artisanal bakery style." class="w-full h-full object-cover" data-alt="A decadent choco chip truffle cake decorated with large chocolate chunks and a smooth ganache finish. Isolated against a soft, bright background that highlights the appetizing texture. Premium artisanal bakery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTDMTVty9wwVSSLKw9maPlgDVfsBz6d7ahetcti6sJskMObyFLjmmtlvV105gpQcHMgv6_xhNR4fGJn4F1P6b0J-GYUXcjiENdHxoJYlkAJJ8kzXNgWeHX05mvwE5yVvTeYZchFnE_fNnfX6fiapIyyyoRilbe_nE9swHo26QS4EYEHLsQUXGlFMeecYRUNx0X5zrO4Ma9oq5MzNRy5ov_M7fizkqvl9-sHGOxxpBfm3nhES6W6DEqSHmx5uDbeZc6WGMc3Yq4uaGZ">
+</div>
+<h3 class="font-label-bold text-label-bold text-on-surface mb-2 h-10">Choco Chip Truffle Cake</h3>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-bold text-label-bold text-primary">₹509</span>
+<span class="text-xs text-on-surface-variant line-through ml-2">₹599</span>
+<div class="flex text-yellow-400 text-xs mt-1">
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface-variant ml-1">(300)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-white rounded-3xl p-6 shadow-[0_4px_20px_rgba(140,0,11,0.05)] hover:shadow-[0_8px_30px_rgba(140,0,11,0.1)] transition-shadow duration-300 relative group">
+<button class="absolute top-4 left-4 text-outline-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-surface-container-low">
+<img alt="A tropical fruit and almond cake, beautifully decorated with fresh fruits and toasted almond flakes. The cake looks light, fresh, and artisanal. Set against a clean, warm white background typical of a modern luxury bakery." class="w-full h-full object-cover" data-alt="A tropical fruit and almond cake, beautifully decorated with fresh fruits and toasted almond flakes. The cake looks light, fresh, and artisanal. Set against a clean, warm white background typical of a modern luxury bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuKoaHXCIuc1QUFd5zOYMHYdttmpUUWhzOe2nnhluSJsDPRQGfoTSenvljxyF2IwoKsaqTgXW0ef1YVwV33J0-S6HL6sRLaS5RheS5GVjztQnemNrlhOQ7ACGybfU091UXjLh5IUZJG3I4za80eHO1XhuCjV0C5VJKq5F1UYe7rA1--c9B1hOma2EZ2K18HUbtPsK5gk25OrSj4GBN_SlQw_FYpesEotCA7KrG2E6uCvY3bl1QV0VUDBXm4ZMPwPApbu8GffHBOXwo">
+</div>
+<h3 class="font-label-bold text-label-bold text-on-surface mb-2 h-10">Tropical Fruit N Almond Cake</h3>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-bold text-label-bold text-primary">₹509</span>
+<span class="text-xs text-on-surface-variant line-through ml-2">₹599</span>
+<div class="flex text-yellow-400 text-xs mt-1">
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px;">star</span>
+<span class="text-on-surface-variant ml-1">(120)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-white rounded-3xl p-6 shadow-[0_4px_20px_rgba(140,0,11,0.05)] hover:shadow-[0_8px_30px_rgba(140,0,11,0.1)] transition-shadow duration-300 relative group">
+<button class="absolute top-4 left-4 text-outline-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-surface-container-low">
+<img alt="A slice of butterscotch crunch cake with visible layers of sponge, cream, and crunchy caramel bits. The lighting is soft and flattering, showcasing the moist texture of the cake. Professional food photography style." class="w-full h-full object-cover" data-alt="A slice of butterscotch crunch cake with visible layers of sponge, cream, and crunchy caramel bits. The lighting is soft and flattering, showcasing the moist texture of the cake. Professional food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHn1g2k-ERB_ZRpv6wKTYT_fD8E0a626llpb0bDzDi11oJV88ro9nJpyaQH7cD59yoM7rcpX35KYLumZeYH8Nl1K8VVn0gveFUXYAp-iKuBxzFQnu4x3MLqvQwZFfWd8M5Fjul_PK2CmiesZFyZ9bOxaIv-sJICU52a2UOkto9TcxHU9BrPyi1m4NLeModCDBEDT0j9P1uIQ_3u_MMYWBN6MU2hEa4hQq7wFpT5pL9uc2hphfgpUn0sG_mGOMd095dYRCIbXzqv-I">
+</div>
+<h3 class="font-label-bold text-label-bold text-on-surface mb-2 h-10">Rich Butterscotch Crunch Cake</h3>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-bold text-label-bold text-primary">₹399</span>
+<span class="text-xs text-on-surface-variant line-through ml-2">₹499</span>
+<div class="flex text-yellow-400 text-xs mt-1">
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="text-on-surface-variant ml-1">(850)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex justify-end mt-8">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-container transition-colors shadow-sm">VIEW ALL</button>
+</div>
+</section>
+<!-- Promise Section & Gallery Bento Grid -->
+<section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Our Promise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">There's no secret spell - only honest hard work!</p>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Left Column: Promise Icons & Promo -->
+<div class="space-y-8">
+<!-- Promise Icons -->
+<div class="bg-white rounded-3xl p-8 shadow-[0_4px_20px_rgba(140,0,11,0.05)] grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-primary flex items-center justify-center mb-3 text-primary">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<span class="block text-primary font-bold text-lg">4.8/5</span><span class="font-label-bold text-label-bold text-on-surface-variant text-sm">ON TIME DELIVERY</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-primary flex items-center justify-center mb-3 text-primary">
+<span class="material-symbols-outlined text-3xl">cake</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant text-sm">5100+ DESIGNS</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-primary flex items-center justify-center mb-3 text-primary">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant text-sm">2 CR+ ORDERS</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-primary flex items-center justify-center mb-3 text-primary">
+<span class="material-symbols-outlined text-3xl">bakery_dining</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant text-sm">BAKED FRESH</span>
+</div>
+</div>
+<!-- Promo Card -->
+<div class="bg-surface-container-high rounded-3xl p-8 flex items-center relative overflow-hidden border border-outline-variant">
+<div class="w-1/3 flex justify-center">
+<span class="material-symbols-outlined text-6xl text-primary transform -rotate-12">local_activity</span>
+</div>
+<div class="w-2/3 pl-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">THE MAGICAL TICKET</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Add 3 reminders in your account.<br>Win offers worth Rs. 750</p>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-container transition-colors shadow-sm">UNLOCK NOW</button>
+</div>
+</div>
+<!-- Social Follow -->
+<div class="flex items-center space-x-4 pl-4">
+<div class="flex -space-x-3">
+<img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU70iHnDd9CHPj9lKtGBmPyYuUpS5CZGDU93NCXa-LimAN6BPbRPESXHonTYFjMgn59KuTptCWeI6LQGnJROYnmP1g12jh9xIf_emtkeS932fo34tJD-kgKqMM7Tkm5SreG5nbpd1GsG9RRx3S7nS5KL0zaNzFp9GubJ11jgF21tCKVI-fXFmT0_RBtmpliSwjffD2yoLo_UO_q8IpHzqPa_YDXMuLrMpD3K-V0EVjuGcXs7pLDdWRgv2Kc9FSot6y1UlqCzrS-fZr">
+<img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJrDe5tRPjxDsZUmiN1eOeuEOu64JstIIlMK_E2PUGzEdFQ2_g8q7yuaz0DculyS3f7RpLXkQ6B58ucGGrv2b-_W8TAJ5HMuvRCNTAFI83edCilYd6sSMWzSthDlQU58Ndyeoo2JO9lNVmQh3k1LK5cNbiPHj9t3MyJ-8g9RqSKvApCKRBvBbqBNVwJsLcpkudPiNTnzyBwM-ojY1obqlJx9jKc7ybhMgRsLgvvpTKTd5lM8arD8wxpMfkVAoe9S8fLFBtWk-CAMMP">
+<img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEuw7fG8Hf5k6IMol1MtpspbqeuQKYrvM2CYkM6DGg8XeDCgKSagcVbF2zR1ihxDBwI-ZaeymsCRvhBccbhqck7pmhv_GZxnuY_r8vaAEQbdYDfo-JALfmiawSNJgSGFw8B5F_CMa6x5kWqGMDliRfhTBK_JzFujAAKk8lot0OlU5MPlFO3-V0CmvzuCT91OXcRMY18Tw4VnCc2djfQDwIqqG3gvthSBsNAJEdJLvxId5OyBwugqYXHTHx2xeayn3wb6_CHt_aR3xR">
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-variant flex items-center justify-center text-xs font-bold text-on-surface-variant">+2k</div>
+</div>
+<span class="font-label-bold text-label-bold text-primary">Follow us on social!</span>
+</div>
+</div>
+<!-- Right Column: Gallery Bento Grid -->
+<div class="grid grid-cols-2 grid-rows-3 gap-4 h-full">
+<div class="rounded-3xl overflow-hidden row-span-1 shadow-sm">
+<img alt="A beautifully decorated tiered wedding cake in a brightly lit bakery setting. The cake features elegant piping and delicate sugar flowers. The atmosphere is warm, celebratory, and artisanal, fitting the brand's premium identity." class="w-full h-full object-cover" data-alt="A beautifully decorated tiered wedding cake in a brightly lit bakery setting. The cake features elegant piping and delicate sugar flowers. The atmosphere is warm, celebratory, and artisanal, fitting the brand's premium identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqj1PrYHfwVIJPhGpjKXHx-BVevH9b8i8UDb7MAMKEs7PoSMvAIjS6TDklVryWiAakMApkitdmmfosDgYcLV5lB3PUB5iF-Lc89vbF9U5TKBUY8ApJBgpxVhDielXFPn3jqi3tJd6VNXdIlHyerFwuO3-UjDs2Y7m8BQXkX8mbT5u7mEtycky1NWdeV-RoHvPOfL13eTkppAEQqfIq6wV_CNzASo4IOKT_GbEGoXk4qhNNdK8Cg4BkEfAGHXi9j82mEfAJqPwXB0P">
+</div>
+<div class="rounded-3xl overflow-hidden row-span-2 shadow-sm">
+<img alt="A smiling female pastry chef in a clean white uniform holding a freshly baked, beautifully frosted cake. She is standing in a professional, brightly lit bakery kitchen. The image conveys warmth, expertise, and high-quality artisanal craftsmanship." class="w-full h-full object-cover" data-alt="A smiling female pastry chef in a clean white uniform holding a freshly baked, beautifully frosted cake. She is standing in a professional, brightly lit bakery kitchen. The image conveys warmth, expertise, and high-quality artisanal craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe36zBiULDwiuSE4QxdHl8sjoF3hRbXlLIwFBECFS7WzYaQyPPJSzzXpMI1RRGefOqtQh1V17ZhynBRy_d07gL-G9qN5mqlcJOUYrksCwHYYZNnKvsDs9eed59NdknfeJg7NgW9ylwAnL8Pvsfk_73-HUdyDa7U_iNNSyZ8L4eIPObzZgvHQX-NA07j2MRZUzyqDMloudC190Q42hX5WKaX-EwZ4aOEEsVHXnXDfsKo0UClFCX7Ocz7zT5OB2uQLibSGoSDiecUh5v">
+</div>
+<div class="rounded-3xl overflow-hidden row-span-1 shadow-sm relative group">
+<div class="absolute inset-0 bg-primary/80 flex flex-col items-center justify-center text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="font-headline-md text-headline-md mb-2">Join Our Team</span>
+<span class="font-body-sm text-center">We're always looking for passionate bakers.</span>
+</div>
+<img alt="Two professional bakers collaborating in a modern bakery kitchen, smiling and decorating a large cake together. The scene is well-lit, warm, and emphasizes teamwork and dedication to quality baking." class="w-full h-full object-cover" data-alt="Two professional bakers collaborating in a modern bakery kitchen, smiling and decorating a large cake together. The scene is well-lit, warm, and emphasizes teamwork and dedication to quality baking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzlye5Nw194gXoCWsOHzV6mVtJbZB9m2kvv0Q4_rJl5vdXNy2e_752fK457d7vSqyMvrNhEBQzGlEiFDSjL93bb6przcGuQMuIN_ncoKfBnsH3jX4kinsNwE5OM30DCU-9x0h0OoG-mWAhVyGTLtIpNAcPtJDLsoSsQOzcLBPirW7S0YnEpb1ValqUyOG15hdGE-Gp2OHoGnj1Oxi8zxD5_nieRhviaUqdzUHNV5uCkyF3HYVWu9I9MmrFB_FmukMwidaSaxwJ6UGk">
+</div>
+<div class="rounded-3xl overflow-hidden row-span-1 shadow-sm">
+<img alt="A close-up shot of a magnificent, multi-tiered celebration cake with intricate floral decorations, displayed proudly in a high-end bakery window. The lighting highlights the meticulous details and the warm, inviting atmosphere of the shop." class="w-full h-full object-cover" data-alt="A close-up shot of a magnificent, multi-tiered celebration cake with intricate floral decorations, displayed proudly in a high-end bakery window. The lighting highlights the meticulous details and the warm, inviting atmosphere of the shop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKl1iAS3psWw_E_5mlL8iYzv4KPJ3gS6KYH89KyiPEHv-76iSdSJtQLdsXKRrJNtSGmZBNkvPQgSfsnd-IGllyDzlNVCSCmENf-N5ueE9EIoikYS2gjKA6nqwsfPa_4UK1y-BB4alGCgeDDcVzJ9U6E9Im8mOQBomLs6Yowpf-4hzJPdDKzJO8HqcgwmNO8pAtybmGh4ijMCu4y1gn42AapfbgS0LQLO7Kx6pt1yoNaa71n6R4I0IN7xpwUKdDXAUiSBYudQo8cRu_">
+</div>
+<div class="rounded-3xl overflow-hidden row-span-1 col-span-2 shadow-sm h-48">
+<img alt="A wide shot of the interior of a luxurious modern bakery. The display cases are filled with artisanal pastries and cakes. The decor is warm, featuring light woods, cream walls, and tasteful lighting that creates an inviting, premium shopping experience." class="w-full h-full object-cover" data-alt="A wide shot of the interior of a luxurious modern bakery. The display cases are filled with artisanal pastries and cakes. The decor is warm, featuring light woods, cream walls, and tasteful lighting that creates an inviting, premium shopping experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOWk_tmMzUbuJ3DtbCdEMXPNAtzH7ZGKVYun3dEr92e-NTEp7U7mFZfWgIPafwyve8mmKwOmW4E_DE5eQOssW0XVBNuJEgt97soH7KdpCOkz_iv7VZJPUqMH8SP70m7i9S3kQe7yCzpF-5W8Dpd7xTwlzQ8uxeyLrFHfMKnolt8cJY77ZjnGebvfWLbTmd3O4qq-3B1qKuYIalpg4nKTiSGWg_XSYKIhj-EnyGLMRtqEfDAiogvXEHn-kFc5Ryf1PEbXsbk2YpKudh">
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[100px] mt-section-padding bg-surface-variant dark:bg-surface-container-highest flat no shadows">
+<!-- Trust Banner -->
+<div class="bg-primary text-on-primary py-4 px-6 mx-auto max-w-container-max-width transform -translate-y-1/2 rounded-full text-center shadow-lg mx-margin-mobile md:mx-margin-desktop text-sm md:text-base">© 2026 Goyal Bakers and Confectioners Rohini. All rights reserved.</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop pt-12 pb-8 max-w-container-max-width mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col">
+<span class="font-display-lg text-headline-md text-primary dark:text-primary-fixed mb-4">Goyal Bakers and Confectioners</span>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant dark:text-on-surface">
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="about.html">Our Story</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="contact.html">Contact Us</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Locate Stores</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Media</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Careers</a></li>
+<li class="mt-4 pt-4 border-t border-outline-variant/30"><p class="text-xs uppercase font-bold mb-1">Visit Us</p><p class="">Shop 27 &amp; 28, CSC-02, DDA Market, Sector-13, Rohini, New Delhi</p></li><li class="mt-2"><p class="text-xs uppercase font-bold mb-1">Call Us</p><p class="">+91 9911613932</p></li></ul>
+</div>
+<!-- Know Us -->
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-primary mb-4 uppercase">KNOW US</span>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant dark:text-on-surface">
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="contact.html">Contact Us</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Blog</a></li>
+</ul>
+</div>
+<!-- Need Help -->
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-primary mb-4 uppercase">NEED HELP</span>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant dark:text-on-surface">
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Cancellation And Refund</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- More Info -->
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-primary mb-4 uppercase">MORE INFO</span>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant dark:text-on-surface mb-6">
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Terms And Conditions</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Customer Grievance</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Coupons &amp; Offers</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">Download App</a></li>
+</ul>
+<!-- Newsletter -->
+<div class="flex w-full">
+<input class="w-full min-w-0 px-4 py-2 rounded-l-full border border-outline-variant bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary flex-grow text-body-md" placeholder="Enter Email Address" type="email">
+<button class="flex-shrink-0 bg-primary text-on-primary px-4 md:px-6 py-2 rounded-r-full font-label-bold text-label-bold hover:bg-primary-container transition-colors">SUBSCRIBE</button>
+</div>
+</div>
+</div>
+<div class="text-center py-4 border-t border-outline-variant/30 text-on-surface-variant text-sm md:text-base font-body-md px-4 md:px-margin-desktop">© 2026 Goyal Bakers and Confectioners Rohini. All rights reserved.</div>
+<!-- Floating Help Button -->
+<button class="fixed bottom-4 right-4 md:bottom-8 md:right-8 h-14 bg-white text-primary rounded-full shadow-lg flex items-center justify-center hover:bg-surface-variant transition-all duration-500 border border-outline-variant group z-50 overflow-hidden">
+<div class="w-14 h-14 flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<span class="max-w-0 group-hover:max-w-[200px] transition-all duration-500 whitespace-nowrap text-sm font-bold opacity-0 group-hover:opacity-100 group-hover:pr-6">Hey, need any help?</span>
+</button>
+</footer>
+
+
+<script src="script.js"></script>
+</body></html>
