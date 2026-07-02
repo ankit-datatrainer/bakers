@@ -1,350 +1,72 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>About Us - Fancy Baker</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "surface": "#fff8f7",
-                      "inverse-primary": "#ffb4ab",
-                      "surface-variant": "#eddfdf",
-                      "on-surface-variant": "#5a403d",
-                      "outline-variant": "#e3beba",
-                      "on-tertiary-container": "#fcc4c2",
-                      "outline": "#8e706c",
-                      "error": "#ba1a1a",
-                      "on-surface": "#211a1a",
-                      "secondary": "#635e53",
-                      "tertiary-fixed-dim": "#f0b9b7",
-                      "primary-container": "#b01e1e",
-                      "on-secondary-fixed-variant": "#4b463c",
-                      "primary": "#8c000b",
-                      "on-secondary-container": "#696458",
-                      "primary-fixed-dim": "#ffb4ab",
-                      "on-primary": "#ffffff",
-                      "secondary-container": "#e9e2d3",
-                      "inverse-on-surface": "#fbeeed",
-                      "on-secondary": "#ffffff",
-                      "on-tertiary-fixed": "#311212",
-                      "surface-bright": "#fff8f7",
-                      "on-primary-container": "#ffc4bd",
-                      "tertiary-container": "#794f4e",
-                      "primary-fixed": "#ffdad6",
-                      "surface-container-high": "#f3e5e5",
-                      "on-tertiary": "#ffffff",
-                      "error-container": "#ffdad6",
-                      "secondary-fixed": "#e9e2d3",
-                      "surface-container-low": "#fef0f0",
-                      "on-tertiary-fixed-variant": "#633c3c",
-                      "surface-container-highest": "#eddfdf",
-                      "inverse-surface": "#362f2f",
-                      "surface-container": "#f8ebea",
-                      "on-primary-fixed-variant": "#93000d",
-                      "on-background": "#211a1a",
-                      "surface-dim": "#e4d7d7",
-                      "secondary-fixed-dim": "#cdc6b8",
-                      "surface-tint": "#b62322",
-                      "background": "#fff8f7",
-                      "surface-container-lowest": "#ffffff",
-                      "on-error": "#ffffff",
-                      "on-primary-fixed": "#410002",
-                      "on-error-container": "#93000a",
-                      "tertiary": "#5f3838",
-                      "tertiary-fixed": "#ffdad8",
-                      "on-secondary-fixed": "#1e1b13"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "section-padding": "80px",
-                      "gutter": "24px",
-                      "container-max-width": "1200px",
-                      "margin-desktop": "48px",
-                      "margin-mobile": "16px",
-                      "unit": "8px"
-              },
-              "fontFamily": {
-                      "display-lg": [
-                              "Epilogue"
-                      ],
-                      "label-sm": [
-                              "Plus Jakarta Sans"
-                      ],
-                      "display-lg-mobile": [
-                              "Epilogue"
-                      ],
-                      "headline-md": [
-                              "Epilogue"
-                      ],
-                      "body-md": [
-                              "Plus Jakarta Sans"
-                      ],
-                      "body-lg": [
-                              "Plus Jakarta Sans"
-                      ],
-                      "label-bold": [
-                              "Plus Jakarta Sans"
-                      ],
-                      "headline-lg": [
-                              "Epilogue"
-                      ]
-              },
-              "fontSize": {
-                      "display-lg": [
-                              "56px",
-                              {
-                                      "lineHeight": "1.1",
-                                      "letterSpacing": "-0.02em",
-                                      "fontWeight": "800"
-                              }
-                      ],
-                      "label-sm": [
-                              "12px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "500"
-                              }
-                      ],
-                      "display-lg-mobile": [
-                              "36px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "800"
-                              }
-                      ],
-                      "headline-md": [
-                              "24px",
-                              {
-                                      "lineHeight": "1.3",
-                                      "fontWeight": "700"
-                              }
-                      ],
-                      "body-md": [
-                              "16px",
-                              {
-                                      "lineHeight": "1.6",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "body-lg": [
-                              "18px",
-                              {
-                                      "lineHeight": "1.6",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "label-bold": [
-                              "14px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "700"
-                              }
-                      ],
-                      "headline-lg": [
-                              "32px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "700"
-                              }
-                      ]
-              }
-            },
-          }
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-          font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .filled-icon {
-          font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .soft-shadow {
-            box-shadow: 0 4px 20px rgba(140, 0, 11, 0.05);
-        }
-        .hero-wave {
-            border-bottom-left-radius: 100px;
-            border-bottom-right-radius: 100px;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The story of Fancy Baker — a family-run artisan bakery in Rohini, New Delhi, baking with love since 2015.">
+<title>About Us — Fancy Baker</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="js/data.js"></script>
+<script defer src="js/app.js"></script>
+<script defer src="js/animations.js"></script>
 </head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="sticky top-0 w-full z-50 bg-surface dark:bg-inverse-surface shadow-sm">
-<div class="flex flex-col items-center w-full px-margin-desktop py-4 max-w-container-max-width mx-auto">
-<div class="flex w-full justify-between items-center mb-4">
-<a class="font-display-lg text-headline-lg font-extrabold text-primary dark:text-primary-fixed" href="index.html">Fancy Baker</a>
-<div class="hidden md:flex flex-1 max-w-md mx-8">
-<div class="relative w-full">
-<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
-<input class="w-full pl-12 pr-4 py-2 rounded-full border border-outline-variant bg-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-md text-on-surface" placeholder="Search..." type="text">
-</div>
-</div>
-<div class="flex items-center gap-4">
-<button class="flex items-center justify-center p-2 rounded-full hover:bg-surface-variant transition-colors text-primary dark:text-primary-fixed">
-<span class="material-symbols-outlined">shopping_cart</span>
-</button>
-<button class="flex items-center justify-center p-2 rounded-full hover:bg-surface-variant transition-colors text-primary dark:text-primary-fixed hidden md:flex">
-<span class="material-symbols-outlined">person</span>
-<span class="ml-2 font-label-bold text-label-bold">Login/Signup</span>
-</button>
-</div>
-</div>
-<div class="w-full flex justify-center gap-8 overflow-x-auto pb-2 scrollbar-hide">
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="index.html">Home</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="menu.html">Menu</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="order.html">Order Online</a>
-<a class="font-label-bold text-label-bold text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-primary dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="about.html">About</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-200 whitespace-nowrap" href="contact.html">Contact</a>
-</div>
-</div>
-</nav>
-<!-- Main Content Canvas -->
-<main class="flex-grow w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col gap-section-padding">
-<!-- Hero Story Section -->
-<section class="flex flex-col md:flex-row gap-gutter items-center">
-<div class="flex-1 space-y-6">
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Our Story</h1>
-<h2 class="font-headline-md text-headline-md text-on-surface">Baking memories since 1995.</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">What started as a small family kitchen experiment has blossomed into Fancy Baker, a cornerstone of our community's celebrations. We believe in the magic of simple ingredients transformed by passion and patience. Every cake, every loaf, every pastry is a testament to our dedication to artisanal craftsmanship and warm, welcoming service.</p>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                    We source our ingredients locally whenever possible, honoring the tradition of baking while embracing modern flavors. Our commitment is to bring a slice of joy to your table, whether it's a grand wedding or a quiet Tuesday morning.
-                </p>
-</div>
-<div class="flex-1 w-full flex justify-center relative">
-<div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-surface shadow-xl relative z-10">
-<img alt="Baker working" class="w-full h-full object-cover" data-alt="A warm, inviting shot of a master baker gently dusting powdered sugar over a freshly baked, decadent chocolate cake in a bright, modern bakery setting. The lighting is soft and natural, emphasizing the rich textures of the cake and the artisanal atmosphere. The color palette features warm creams, deep chocolate browns, and hints of elegant primary red." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXV2nkJV18XwFpOLSDm8s-eYySCiLrhQ4JN5U7aK2BRTiMs-7y6yW28dZhWl06J2DqSJ420lpkqWstoT3svEGUG3jBFRikm1OtwoK22Uyr_RyWI6svVOuVA5JWXM5KLuuW6gVpAVyDgfqqmzdDoAQVIvacEEwnz7epj24seZwA4Z68ItIyaMeeYRh7R87whaOhRX7EPynQiJ5fQRiOgHhvmKm-wKMRlVs2u8Fy4TNg1f4Ny0hWkzb2BXqSVkbX4j88EuOBiK8MQgm_">
-</div>
-<div class="absolute -bottom-8 -right-8 w-48 h-48 rounded-full bg-primary-container opacity-20 -z-10"></div>
-<div class="absolute -top-4 -left-4 w-32 h-32 rounded-full bg-secondary-container opacity-40 -z-10"></div>
-</div>
-</section>
-<!-- Information Cards (Bento Style) -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Location -->
-<div class="bg-surface-container-lowest rounded-xl p-6 soft-shadow flex flex-col items-center text-center gap-4 transition-transform hover:-translate-y-1 duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">location_on</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Visit Us</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Shop 27 &amp; 28, CSC-02, DDA Market,<br>Sector-13, Rohini, New Delhi</p>
-</div>
-</div>
-<!-- Timings -->
-<div class="bg-surface-container-lowest rounded-xl p-6 soft-shadow flex flex-col items-center text-center gap-4 transition-transform hover:-translate-y-1 duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">schedule</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Hours</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Mon - Sat: 8am - 10pm<br>Sunday: 9am - 9pm</p>
-</div>
-</div>
-<!-- Contact -->
-<div class="bg-surface-container-lowest rounded-xl p-6 soft-shadow flex flex-col items-center text-center gap-4 transition-transform hover:-translate-y-1 duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">phone_in_talk</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Call Us</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">+91 9911613932<br>hello@goyalbakers.com</p>
-</div>
-</div>
-<!-- Cuisine -->
-<div class="bg-surface-container-lowest rounded-xl p-6 soft-shadow flex flex-col items-center text-center gap-4 transition-transform hover:-translate-y-1 duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">restaurant</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Specialty</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Artisanal Breads<br>Custom Celebration Cakes</p>
-</div>
-</div>
-</section>
-<!-- Gallery Section -->
-<section class="space-y-8">
-<div class="text-center">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Behind the Scenes</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Take a glimpse into our world of flour, sugar, and dedication. Our open kitchen philosophy means you're always part of the process.</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-gutter">
-<div class="col-span-2 md:col-span-2 rounded-xl overflow-hidden aspect-video relative group">
-<img alt="Bakery interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide, beautifully lit interior shot of a modern artisan bakery. The space features elegant cream-colored walls, warm wooden shelving displaying fresh crusty breads, and a sleek glass display case filled with colorful pastries. The lighting is bright and airy, creating a welcoming, premium atmosphere consistent with a high-end food brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsLlrwL3yfrBHz6SBbpbnyUqi8AKZx5dvvIXeFMVmFaWSb2CHU_2YgMSXAZ4z1IkHJ1ceC7DVQMjNgeR-UCD-Pf4KX0Y6NyzF-54hO16ajeICwCEyQTTwx-GhyJHikDtgSrwGtDXXF1hpQ_0k6JKcthQC1-NN6UZEou-sMEHH7IHs-QAcRdKrvNFutlthddJr5o5Bi2MROEV_MEglJgUuLNHjwexr3aNk60oLkZbE6lIMWV-J7GoLxHka43nDikgbk5mT8xqET_hST">
-<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-<span class="text-on-primary font-headline-md text-headline-md">Our Fresh Produce Display</span>
-</div>
-</div>
-<div class="rounded-xl overflow-hidden aspect-square relative group">
-<img alt="Decorating cake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, high-quality image of a pastry chef's hands carefully piping intricate white frosting details onto a tall, elegant celebration cake. The scene is set in a pristine, bright kitchen. The focus is sharp on the piping bag and the delicate sugar work, conveying a sense of artisanal craftsmanship and attention to detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTrzOcHte5RMa8cRWzhzcLVJoJ4Drseu7oRIMckFevX7NHOTuHMCb1QqlylGdEimpt9oyZBEo5iIzx1WKwXwuyqWTaZKmVnFxwvFBigHzJ4U5qQIBt248lBRE5p9iQ5ymm_UaQmfcDE8v98NlidK3gSHFJIoUhSgERJ6spdY0m22oiKv1nTmPTR8sd_xo4U8ckqVi0QO6nwsJOYNigXrMxGyv7M2PBvyfEdbG55VNsR-r6xuAYLyLrEtj7Sb9FVpuDv8_9YNFHh7LB">
-</div>
-<div class="rounded-xl overflow-hidden aspect-square relative group">
-<img alt="Fresh bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A warm, tactile photo of freshly baked artisan sourdough loaves resting on a rustic wooden table. The crusts are a deep, golden brown with beautifully scored patterns, lightly dusted with flour. The lighting is soft and directional, highlighting the textures of the bread against a clean, warm cream background, evoking comfort and quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWCj9xp0lMI-UVcudwL95Y98lX_8lCQfFRbnl8oIXnYmO09PkK8kb4R04KEYCVJ2atBCPYlpIowlMKSS5lYuxDtiuqZSpXjU-cciRyyAyk0Z7X4ECbnskY2p3rkquvAepE5mHSSYs1ecu6sHQ1Sjz1cN_SmU6Fk-xrrpP-JzVGwTcVjy1MHigIS4oEGymGZT_colOVJ3IdrhAP04Ey8Mx76LDTOK9uMncx4kwYmczkQCbarrsUnKINNQ2aK3xiaB8XgnFlwezLxYdS">
-</div>
-<div class="rounded-xl overflow-hidden aspect-square relative group">
-<img alt="Team smiling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A candid, joyful portrait of two bakery staff members in clean white aprons, smiling warmly at the camera. They are standing behind a counter filled with colorful macarons and pastries. The atmosphere is friendly, approachable, and professional. The bright lighting and soft cream and primary red accents in the background reinforce the brand's identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfe7Nn9updHqRhY8fxOgmweLW1SymILW_ygONWPfFGq0UKiO1idGIUq0iY_Efc2fa59UGB6y-Ms12_d7DAH7MpRdsKyGRUjaTahMUgh1rRgxW1bAKjnG4bZNfjWbvWBHB4jXMG2g3LBpBcauTW4JnWHVxsDQfIBHYb-ryqD1aTbiWgQfoc1tWjA9FO4gq6w4Eq8ZE_kDkVP2C4SXCqpfK12pJKX82TGgTXxdK5T4HJGX7DXDIyHnlErSIucV1mshUPu5xb0Vs0_ohH">
-</div>
-<div class="rounded-xl overflow-hidden aspect-square relative group">
-<img alt="Pouring chocolate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A macro, slow-motion style image capturing a thick, glossy ribbon of rich dark chocolate being poured over a delicate dessert. The lighting is dramatic yet warm, emphasizing the smooth, indulgent texture of the chocolate against a soft, out-of-focus cream background. The image exudes luxury, decadence, and high-quality ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBczVb_5chCXxBGc06wKj8QbTFOJBycK3ZLOvK25uqzyH6ljrCLzC4DRNwzRp8wq7O5CzJ9tBGSMbRXWpzlDP0PCmSnTkdP_YGaDh7QxoBuawe8ro-ZIHR_7UDChvgY-AX9EfaoYY0BHtIpElsYYgi8G9p6sjGBex9HCoxCQtYBWR2zn4qlYaEGYarrCuJ-wMQG3F9CQgB7cTh68pAoOlSaUIiPn-fUNkS0nBbxBvDcVjMAOFNVXNYCAnCBJDVTiNB1e8PJVcpBEBdQ">
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-variant dark:bg-surface-container-highest w-full rounded-t-[100px] mt-section-padding">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max-width mx-auto">
-<!-- Brand & Info -->
-<div class="flex flex-col gap-4">
-<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed font-extrabold" href="index.html">Fancy Baker</a>
-<p class="font-body-md text-body-md text-on-surface-variant">Your Trusted FSSAI Certified Online Bakery for Every Celebration.</p>
-<div class="flex gap-4 mt-2">
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera_alt</span></a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">face_nod</span></a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
-</div>
-</div>
-<!-- Links Column 1 -->
-<div class="flex flex-col gap-3">
-<h4 class="font-label-bold text-label-bold text-on-surface uppercase tracking-wider mb-2">Explore</h4>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 transition-colors" href="menu.html">Menu</a>
-<a class="font-body-md text-body-md text-primary font-bold" href="about.html">About Us</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 transition-colors" href="contact.html">Contact</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 transition-colors" href="#">Blog</a>
-</div>
-<!-- Links Column 2 -->
-<div class="flex flex-col gap-3">
-<h4 class="font-label-bold text-label-bold text-on-surface uppercase tracking-wider mb-2">Legal</h4>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 transition-colors" href="#">Terms of Service</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 transition-colors" href="#">Cancellation Policy</a>
-</div>
-<!-- Newsletter -->
-<div class="flex flex-col gap-4">
-<h4 class="font-label-bold text-label-bold text-on-surface uppercase tracking-wider mb-2">Stay Updated</h4>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
-<div class="flex flex-col gap-2 mt-2">
-<input class="w-full px-4 py-2 rounded-full border border-outline-variant bg-surface focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-body-md text-on-surface" placeholder="Enter Email Address" type="email">
-<button class="w-full bg-primary text-on-primary font-label-bold text-label-bold py-2 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm">SUBSCRIBE</button>
-</div>
-</div>
-</div>
-<!-- Copyright -->
-<div class="w-full text-center py-6 border-t border-outline-variant/30 mt-4">
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">© 2024 Fancy Baker Rohini. All rights reserved.</p>
-</div>
-</footer>
+<body data-page="about">
 
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Our story</span>
+    <h1>Baked with love, since 2015</h1>
+    <p>What started as one home oven and a sourdough starter named "Bubbles" is now Rohini's favourite neighbourhood bakery.</p>
+  </div>
+</section>
 
-<script src="script.js"></script>
-</body></html>
+<section class="section">
+  <div class="container split">
+    <div class="visual reveal" style="overflow:hidden;"><img src="images/why_bread.png" alt="Baker" style="width:100%;height:100%;object-fit:cover;"></div>
+    <div class="reveal">
+      <span class="eyebrow">How it began</span>
+      <h2>From a home kitchen to 50,000 happy customers</h2>
+      <p style="color:var(--brown-soft)">In 2015, founder Meera Kapoor began baking sourdough for neighbours from her Sector 7 apartment. Word spread faster than butter on warm toast. Today our 14-person team bakes 36+ items fresh every single morning — but every recipe still starts the same way: real ingredients, slow fermentation, and zero shortcuts.</p>
+      <p style="color:var(--brown-soft)">We're proudly a 100% vegetarian, FSSAI-certified kitchen, and we still name every new sourdough starter. (The current one is "Dough-nald.")</p>
+      <a class="btn btn-primary" href="menu.html">Taste the story</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our values</span>
+      <h2>What we knead by</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M12 10l-4-4"></path><path d="M12 14l-4-4"></path><path d="M12 18l-4-4"></path><path d="M12 10l4-4"></path><path d="M12 14l4-4"></path><path d="M12 18l4-4"></path></svg></div><h3>Honest ingredients</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Stone-milled flour, French butter, Belgian chocolate. Nothing artificial, ever.</p></div>
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><h3>Slow craft</h3><p style="font-size:0.9rem;color:var(--brown-muted)">48-hour fermentation and hand-lamination. Good things take time.</p></div>
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><h3>Community first</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Unsold bakes go to local shelters every evening — nothing goes to waste.</p></div>
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></div><h3>Planet friendly</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Compostable packaging and e-bike deliveries within 5 km.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The bakers</span>
+      <h2>Meet the team</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h3>Meera Kapoor</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Founder & Head Baker</p></div>
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h3>Rohit Singh</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Pastry Chef</p></div>
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h3>Anita Verma</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Cake Artist</p></div>
+      <div class="feature-card reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h3>Kabir Malhotra</h3><p style="font-size:0.9rem;color:var(--brown-muted)">Bread Sorcerer</p></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

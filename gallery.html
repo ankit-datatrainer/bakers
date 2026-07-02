@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gallery of Fancy Baker's signature bakes — cakes, breads and pastries from Rohini, New Delhi.">
+<title>Our Bakes — Fancy Baker</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="js/data.js"></script>
+<script defer src="js/app.js"></script>
+<script defer src="js/animations.js"></script>
+</head>
+<body data-page="gallery">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Our bakes</span>
+    <h1>A feast for the eyes</h1>
+    <p>A peek at what leaves our ovens every morning — and some custom creations we're proud of.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // [image, caption, category, size class ("big" spans 2×2, "wide" 2×1, "" 1×1)]
+  const tiles = [
+    ["images/hero_cake.png", "Three-tier wedding cake", "Custom Cakes", "big"],
+    ["images/cat_pastry.png", "Morning croissant batch", "Pastries", ""],
+    ["images/cat_bread.png", "Sourdough Sunday", "Breads", ""],
+    ["images/cat_cake.png", "Rainbow cupcake dozen", "Cupcakes", ""],
+    ["images/cat_donut.png", "Glazed donut wall", "Donuts", ""],
+    ["images/why_bread.png", "Fresh baguettes at 7 AM", "Breads", "wide"],
+    ["images/cat_cookie.png", "Cookie box packing", "Cookies", ""],
+    ["images/cat_cake.png", "Mango mousse season", "Cakes", ""],
+    ["images/cat_cookie.png", "Diwali hamper line-up", "Gifting", "wide"],
+    ["images/cat_bread.png", "Focaccia art", "Breads", ""],
+    ["images/cat_cake.png", "Black forest finish", "Cakes", ""],
+    ["images/cat_pastry.png", "Truffle cake pour", "Behind the scenes", ""],
+  ];
+  document.getElementById("gallery-grid").innerHTML = tiles.map(([src, cap, cat, size], i) => `
+    <figure class="gallery-tile reveal ${size}" data-idx="${i}" tabindex="0" role="button" aria-label="View ${cap}">
+      <img src="${src}" alt="${cap}" loading="lazy">
+      <figcaption class="cap"><span class="cap-cat">${cat}</span>${cap}</figcaption>
+    </figure>`).join("");
+  if (window.FBReveal) FBReveal(document.getElementById("gallery-grid"));
+
+  // Lightbox
+  const lb = document.createElement("div");
+  lb.className = "lightbox";
+  lb.innerHTML = `<button class="lightbox-close" aria-label="Close">✕</button><figure><img alt=""><figcaption></figcaption></figure>`;
+  document.body.appendChild(lb);
+  const open = i => {
+    const [src, cap, cat] = tiles[i];
+    lb.querySelector("img").src = src;
+    lb.querySelector("img").alt = cap;
+    lb.querySelector("figcaption").textContent = cat + " — " + cap;
+    lb.classList.add("open");
+  };
+  const close = () => lb.classList.remove("open");
+  document.getElementById("gallery-grid").addEventListener("click", e => {
+    const t = e.target.closest(".gallery-tile");
+    if (t) open(+t.dataset.idx);
+  });
+  document.getElementById("gallery-grid").addEventListener("keydown", e => {
+    const t = e.target.closest(".gallery-tile");
+    if (t && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); open(+t.dataset.idx); }
+  });
+  lb.addEventListener("click", e => { if (!e.target.closest("figure") || e.target.closest(".lightbox-close")) close(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+});
+</script>
+
+</body>
+</html>

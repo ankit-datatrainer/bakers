@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Track your Fancy Baker order in real time.">
+<title>Track Order — Fancy Baker</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="js/data.js"></script>
+<script defer src="js/app.js"></script>
+<script defer src="js/animations.js"></script>
+</head>
+<body data-page="track">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Order tracking</span>
+    <h1>Where's my bake?</h1>
+    <p>Enter your order ID (e.g. FB3X9K2A) from your confirmation to see live status.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container" style="max-width:640px">
+    <form id="track-form" class="panel" style="display:flex;gap:12px;flex-wrap:wrap">
+      <input id="track-input" required placeholder="Order ID, e.g. FB3X9K2A"
+        style="flex:1;min-width:200px;min-height:48px;padding:12px 16px;border:1.5px solid #eadfc9;border-radius:10px;font-family:inherit;font-size:0.95rem">
+      <button class="btn btn-primary" type="submit">Track</button>
+    </form>
+    <div id="track-result" style="margin-top:28px"></div>
+  </div>
+</section>
+
+</body>
+</html>

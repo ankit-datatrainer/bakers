@@ -1,297 +1,63 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Contact Us - Dakingo</title>
-<!-- Google Fonts: Epilogue & Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .material-symbols-outlined.fill {
-            font-variation-settings: 'FILL' 1;
-        }
-        /* Soft custom shadow reflecting style guidance */
-        .shadow-soft {
-            box-shadow: 0 4px 20px rgba(140, 0, 11, 0.05);
-        }
-    </style>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#fff8f7",
-                        "inverse-primary": "#ffb4ab",
-                        "surface-variant": "#eddfdf",
-                        "on-surface-variant": "#5a403d",
-                        "outline-variant": "#e3beba",
-                        "on-tertiary-container": "#fcc4c2",
-                        "outline": "#8e706c",
-                        "error": "#ba1a1a",
-                        "on-surface": "#211a1a",
-                        "secondary": "#635e53",
-                        "tertiary-fixed-dim": "#f0b9b7",
-                        "primary-container": "#b01e1e",
-                        "on-secondary-fixed-variant": "#4b463c",
-                        "primary": "#8c000b",
-                        "on-secondary-container": "#696458",
-                        "primary-fixed-dim": "#ffb4ab",
-                        "on-primary": "#ffffff",
-                        "secondary-container": "#e9e2d3",
-                        "inverse-on-surface": "#fbeeed",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary-fixed": "#311212",
-                        "surface-bright": "#fff8f7",
-                        "on-primary-container": "#ffc4bd",
-                        "tertiary-container": "#794f4e",
-                        "primary-fixed": "#ffdad6",
-                        "surface-container-high": "#f3e5e5",
-                        "on-tertiary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "secondary-fixed": "#e9e2d3",
-                        "surface-container-low": "#fef0f0",
-                        "on-tertiary-fixed-variant": "#633c3c",
-                        "surface-container-highest": "#eddfdf",
-                        "inverse-surface": "#362f2f",
-                        "surface-container": "#f8ebea",
-                        "on-primary-fixed-variant": "#93000d",
-                        "on-background": "#211a1a",
-                        "surface-dim": "#e4d7d7",
-                        "secondary-fixed-dim": "#cdc6b8",
-                        "surface-tint": "#b62322",
-                        "background": "#fff8f7",
-                        "surface-container-lowest": "#ffffff",
-                        "on-error": "#ffffff",
-                        "on-primary-fixed": "#410002",
-                        "on-error-container": "#93000a",
-                        "tertiary": "#5f3838",
-                        "tertiary-fixed": "#ffdad8",
-                        "on-secondary-fixed": "#1e1b13"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px",
-                        "2xl": "1rem",
-                        "3xl": "1.5rem",
-                        "4xl": "2rem"
-                    },
-                    "spacing": {
-                        "section-padding": "80px",
-                        "gutter": "24px",
-                        "container-max-width": "1200px",
-                        "margin-desktop": "48px",
-                        "margin-mobile": "16px",
-                        "unit": "8px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Epilogue"],
-                        "label-sm": ["Plus Jakarta Sans"],
-                        "display-lg-mobile": ["Epilogue"],
-                        "headline-md": ["Epilogue"],
-                        "body-md": ["Plus Jakarta Sans"],
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "label-bold": ["Plus Jakarta Sans"],
-                        "headline-lg": ["Epilogue"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
-                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "800" }],
-                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-bold": ["14px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
-                    }
-                }
-            }
-        }
-    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact Fancy Baker — visit, call or write to us. Sector 7, Rohini, New Delhi.">
+<title>Contact Us — Fancy Baker</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="js/data.js"></script>
+<script defer src="js/app.js"></script>
+<script defer src="js/animations.js"></script>
 </head>
-<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
-<!-- TopNavBar Component -->
-<header class="sticky top-0 w-full z-50 shadow-sm bg-surface dark:bg-inverse-surface">
-<div class="flex flex-col items-center w-full px-margin-desktop py-4 max-w-container-max-width mx-auto">
-<!-- Top Row: Brand & Actions -->
-<div class="flex w-full items-center justify-between mb-4">
-<a class="font-display-lg text-headline-lg font-extrabold text-primary dark:text-primary-fixed tracking-tight" href="index.html">Fancy Baker</a>
-<div class="flex items-center gap-6">
-<!-- Search Bar (on_right) -->
-<div class="hidden md:flex items-center bg-surface-variant/50 rounded-full px-4 py-2 border border-outline-variant/30 focus-within:border-primary transition-colors">
-<span class="material-symbols-outlined text-outline mr-2 text-sm" data-icon="search">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-body-md text-on-surface w-48 placeholder:text-outline-variant outline-none" placeholder="Search treats..." type="text">
-</div>
-<!-- Action Buttons -->
-<div class="flex items-center gap-4">
-<button class="text-on-surface hover:text-primary transition-all duration-200 Active: scale-95 transition-transform duration-150">
-<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-</button>
-<button class="text-on-surface hover:text-primary transition-all duration-200 Active: scale-95 transition-transform duration-150">
-<span class="material-symbols-outlined" data-icon="person">person</span>
-</button>
-<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary rounded-full px-6 py-2.5 font-label-bold text-label-bold hover:bg-primary-fixed-variant transition-colors shadow-sm" href="order.html">
-                            ORDER NOW
-                        </a>
-</div>
-</div>
-</div>
-<!-- Bottom Row: Navigation Links -->
-<nav class="flex w-full overflow-x-auto no-scrollbar gap-8 justify-center items-center">
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors whitespace-nowrap" href="index.html">Home</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors whitespace-nowrap" href="menu.html">Menu</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors whitespace-nowrap" href="order.html">Order Online</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors whitespace-nowrap" href="about.html">About</a>
-<a aria-current="page" class="font-label-bold text-label-bold text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 whitespace-nowrap" href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
-<!-- Main Content Canvas -->
-<main class="flex-grow w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
-<!-- Header Section -->
-<section class="text-center mb-16 max-w-2xl mx-auto">
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Let's Talk Treats</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                Whether you're planning a grand celebration, need a custom cake design, or just want to say hello, our bakers are ready to listen. Drop us a message!
-            </p>
-</section>
-<!-- Two Column Grid -->
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter mb-section-padding">
-<!-- Left Column: Contact Form -->
-<div class="bg-surface rounded-3xl p-8 md:p-10 shadow-soft border border-surface-variant/50 relative overflow-hidden group">
-<!-- Decorative element -->
-<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-fixed opacity-20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Send a Message</h2>
-<form action="#" method="POST" class="space-y-6 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="flex flex-col">
-<label class="font-label-bold text-label-bold text-on-surface-variant mb-2 ml-4" for="name">Your Name</label>
-<input class="bg-background border border-outline-variant rounded-full px-6 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md transition-colors w-full" id="name" name="name" placeholder="John Doe" type="text" required>
-</div>
-<div class="flex flex-col">
-<label class="font-label-bold text-label-bold text-on-surface-variant mb-2 ml-4" for="phone">Phone Number</label>
-<input class="bg-background border border-outline-variant rounded-full px-6 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md transition-colors w-full" id="phone" name="phone" placeholder="+1 (555) 000-0000" type="tel" required>
-</div>
-</div>
-<div class="flex flex-col">
-<label class="font-label-bold text-label-bold text-on-surface-variant mb-2 ml-4" for="email">Email Address</label>
-<input class="bg-background border border-outline-variant rounded-full px-6 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md transition-colors w-full" id="email" name="email" placeholder="john@example.com" type="email" required>
-</div>
-<div class="flex flex-col">
-<label class="font-label-bold text-label-bold text-on-surface-variant mb-2 ml-4" for="message">Your Message</label>
-<textarea class="bg-background border border-outline-variant rounded-3xl px-6 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md transition-colors w-full resize-none" id="message" name="message" placeholder="Tell us about your sweet cravings..." rows="4" required></textarea>
-</div>
-<button class="w-full md:w-auto inline-flex items-center justify-center bg-primary text-on-primary rounded-full px-10 py-4 font-label-bold text-label-bold hover:bg-surface-tint transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 group" type="submit">
-<span class="">Send Message</span>
-<span class="material-symbols-outlined ml-2 text-sm transition-transform group-hover:translate-x-1" data-icon="send">send</span>
-</button>
-</form>
-</div>
-<!-- Right Column: Contact Details & Socials -->
-<div class="flex flex-col gap-gutter">
-<!-- Details Card -->
-<div class="bg-surface-container rounded-3xl p-8 md:p-10 shadow-soft h-full flex flex-col justify-center">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Get in Touch</h2>
-<ul class="space-y-8">
-<li class="flex items-start">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mr-4 text-primary">
-<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
-</div>
-<div>
-<h3 class="font-label-bold text-label-bold text-on-surface mb-1">Our Bakery</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Shop 27 &amp; 28, CSC-02, DDA Market,<br>Sector-13, Rohini, New Delhi</p>
-</div>
-</li>
-<li class="flex items-start">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mr-4 text-primary">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-</div>
-<div>
-<h3 class="font-label-bold text-label-bold text-on-surface mb-1">Phone</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">+91 9911613932<br><span class="text-sm opacity-80">Available Mon-Sat, 9am - 8pm</span></p>
-</div>
-</li>
-<li class="flex items-start">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mr-4 text-primary">
-<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
-</div>
-<div>
-<h3 class="font-label-bold text-label-bold text-on-surface mb-1">Opening Hours</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Monday - Saturday: 9:00 AM - 10:00 PM<br>Sunday: 10:00 AM - 9:00 PM</p>
-</div>
-</li>
-</ul>
-</div>
-<!-- Social Media Mini Card -->
-<div class="bg-surface-container-high rounded-3xl p-6 flex items-center justify-between shadow-soft">
-<span class="font-label-bold text-label-bold text-on-surface">Connect with us</span>
-<div class="flex gap-3">
-<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors shadow-sm" href="#">
-<span class="material-symbols-outlined text-xl" data-icon="alternate_email">alternate_email</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors shadow-sm" href="#">
-<span class="material-symbols-outlined text-xl" data-icon="share">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors shadow-sm" href="#">
-<span class="material-symbols-outlined text-xl" data-icon="photo_camera">photo_camera</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Embedded Map Section -->
-<section class="w-full rounded-[40px] overflow-hidden shadow-soft border border-surface-variant bg-surface relative h-96 group">
-<div class="absolute inset-0 bg-primary/5 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-500"></div>
-<!-- Real Google Maps Iframe -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14002.348633810155!2d77.12874135!3d28.7445763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0169df31969d%3A0xc6fb09ebbaab0450!2sGoyal%20Bakers%20and%20Confectioners!5e0!3m2!1sen!2sin!4v1716912345678!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full relative z-0"></iframe>
-</section>
-</main>
-<!-- Footer Component -->
-<footer class="bg-surface-variant dark:bg-surface-container-highest w-full rounded-t-[100px] mt-section-padding flat no shadows py-section-padding">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
-<!-- Brand Column -->
-<div class="col-span-1 md:col-span-1 flex flex-col items-start">
-<span class="font-display-lg text-headline-md text-primary dark:text-primary-fixed mb-4">Fancy Baker</span>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface mb-6 opacity-80">
-                    Your Trusted FSSAI Certified Online Bakery for Every Celebration.
-                </p>
-<div class="font-body-md text-label-sm text-on-surface-variant dark:text-on-surface opacity-60 mt-auto">© 2024 Fancy Baker Rohini. All rights reserved.</div>
-</div>
-<!-- Links Column -->
-<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
-<div class="flex flex-col gap-3">
-<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Explore</h4>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-colors Focus: ring-2 ring-primary ring-offset-2" href="menu.html">Menu</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-colors Focus: ring-2 ring-primary ring-offset-2" href="about.html">About Us</a>
-</div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Support</h4>
-<a class="font-body-md text-body-md text-primary font-bold hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-colors Focus: ring-2 ring-primary ring-offset-2" href="contact.html">Contact</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-colors Focus: ring-2 ring-primary ring-offset-2" href="#">Privacy Policy</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-colors Focus: ring-2 ring-primary ring-offset-2" href="#">Terms of Service</a>
-</div>
-<!-- Newsletter (Extra functional detail fitting the brand) -->
-<div class="flex flex-col gap-3 col-span-2 md:col-span-1 mt-4 md:mt-0">
-<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Sweet Offers</h4>
-<div class="flex border border-outline-variant rounded-full overflow-hidden bg-surface focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all">
-<input class="bg-transparent border-none px-4 py-2 w-full text-body-md focus:ring-0 outline-none text-on-surface" placeholder="Enter Email Address" type="email">
-<button class="bg-primary text-on-primary px-4 py-2 font-label-bold text-label-sm hover:bg-surface-tint transition-colors">SUBSCRIBE</button>
-</div>
-</div>
-</div>
-</div>
-</footer>
+<body data-page="contact">
 
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Say hello</span>
+    <h1>We'd love to hear from you</h1>
+    <p>Questions, custom cake briefs, bulk orders or just bread appreciation — drop us a line.</p>
+  </div>
+</section>
 
-<script src="script.js"></script>
-</body></html>
+<section class="section" style="padding-top:40px">
+  <div class="container split" style="align-items:start">
+    <div class="panel reveal">
+      <h3>Send a message</h3>
+      <form id="contact-form" class="form-grid">
+        <div class="form-grid two">
+          <div class="field"><label for="c-name">Name</label><input id="c-name" required placeholder="Your name"></div>
+          <div class="field"><label for="c-phone">Phone</label><input id="c-phone" type="tel" placeholder="+91 …"></div>
+        </div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label for="c-subject">Subject</label>
+          <select id="c-subject"><option>General enquiry</option><option>Custom cake order</option><option>Bulk / corporate order</option><option>Feedback</option></select>
+        </div>
+        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" required placeholder="Tell us everything…"></textarea></div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="reveal">
+      <div class="panel" style="margin-bottom:20px">
+        <h3>Visit the bakery</h3>
+        <p style="color:var(--brown-soft)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Shop 12, Main Market, Sector 7,<br>Rohini, New Delhi 110085</p>
+        <p style="color:var(--brown-soft)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Open daily, 8:00 AM – 10:00 PM</p>
+        <p style="color:var(--brown-soft);margin:0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +91 7428 720 768<br><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> hello@fancybaker.in</p>
+      </div>
+      <div class="panel" style="background:linear-gradient(140deg,var(--yellow-glow),var(--yellow-pale));text-align:center">
+        <div style="font-size:3rem;line-height:1"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+        <h3>Prefer WhatsApp?</h3>
+        <p style="color:var(--brown-soft)">Chat with us directly — fastest for same-day orders.</p>
+        <a class="btn btn-dark" href="https://wa.me/917428720768?text=Hi%20Fancy%20Baker!" target="_blank" rel="noopener">Chat Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
