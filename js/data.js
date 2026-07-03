@@ -20,28 +20,28 @@ const MENU_ITEMS = [
   { id: "eclair-choco", name: "Chocolate Éclair", cat: "Pastries", price: 119, rating: 4.7, tag: "Classic", image: "images/eclair-choco.png", hue: 30, desc: "Choux pastry filled with vanilla crème pâtissière, dipped in dark chocolate." },
   // ── Cookies ──
   { id: "choco-chip-cookie", name: "Double Chocolate Chip Cookies", cat: "Cookies", price: 299, rating: 4.8, tag: "Bestseller", image: "images/choco-chip-cookie.png", hue: 30, desc: "Box of 6 chewy-centred cookies loaded with dark and milk chocolate chunks." },
-  { id: "oatmeal-raisin", name: "Oatmeal Raisin Cookies", cat: "Cookies", price: 249, rating: 4.4, tag: "Healthy", image: "images/cat_cookie.png", hue: 35, desc: "Box of 6 wholesome oat cookies with plump raisins and a hint of cinnamon." },
-  { id: "butter-shortbread", name: "Scottish Butter Shortbread", cat: "Cookies", price: 279, rating: 4.6, tag: "Eggless", image: "images/cat_cookie.png", hue: 45, desc: "Melt-in-mouth shortbread fingers made with pure white butter. Box of 8." },
-  { id: "almond-biscotti", name: "Almond Biscotti", cat: "Cookies", price: 329, rating: 4.5, tag: "New", image: "images/cat_cookie.png", hue: 38, desc: "Twice-baked Italian biscotti with roasted almonds — perfect with coffee." },
+  { id: "oatmeal-raisin", name: "Oatmeal Raisin Cookies", cat: "Cookies", price: 249, rating: 4.4, tag: "Healthy", image: "images/oatmeal-raisin.png", hue: 35, desc: "Box of 6 wholesome oat cookies with plump raisins and a hint of cinnamon." },
+  { id: "butter-shortbread", name: "Scottish Butter Shortbread", cat: "Cookies", price: 279, rating: 4.6, tag: "Eggless", image: "images/butter-shortbread.png", hue: 45, desc: "Melt-in-mouth shortbread fingers made with pure white butter. Box of 8." },
+  { id: "almond-biscotti", name: "Almond Biscotti", cat: "Cookies", price: 329, rating: 4.5, tag: "New", image: "images/almond-biscotti.png", hue: 38, desc: "Twice-baked Italian biscotti with roasted almonds — perfect with coffee." },
   // ── Cupcakes ──
-  { id: "vanilla-cupcake", name: "Vanilla Bean Cupcake", cat: "Cupcakes", price: 99, rating: 4.6, tag: "Classic", image: "images/cat_cake.png", hue: 48, desc: "Madagascar vanilla sponge with swirled buttercream and gold sprinkles." },
-  { id: "choco-cupcake", name: "Chocolate Fudge Cupcake", cat: "Cupcakes", price: 109, rating: 4.8, tag: "Bestseller", image: "images/cat_cake.png", hue: 25, desc: "Rich cocoa cupcake with a molten fudge core and chocolate buttercream." },
-  { id: "red-velvet-cupcake", name: "Red Velvet Cupcake", cat: "Cupcakes", price: 119, rating: 4.7, tag: "Popular", image: "images/cat_cake.png", hue: 355, desc: "Mini red velvet with cream-cheese frosting and a white chocolate heart." },
+  { id: "vanilla-cupcake", name: "Vanilla Bean Cupcake", cat: "Cupcakes", price: 99, rating: 4.6, tag: "Classic", image: "images/vanilla-cupcake.png", hue: 48, desc: "Madagascar vanilla sponge with swirled buttercream and gold sprinkles." },
+  { id: "choco-cupcake", name: "Chocolate Fudge Cupcake", cat: "Cupcakes", price: 109, rating: 4.8, tag: "Bestseller", image: "images/choco-cupcake.png", hue: 25, desc: "Rich cocoa cupcake with a molten fudge core and chocolate buttercream." },
+  { id: "red-velvet-cupcake", name: "Red Velvet Cupcake", cat: "Cupcakes", price: 119, rating: 4.7, tag: "Popular", image: "images/red-velvet-cupcake.png", hue: 355, desc: "Mini red velvet with cream-cheese frosting and a white chocolate heart." },
   // ── Donuts ──
-  { id: "glazed-donut", name: "Classic Glazed Donut", cat: "Donuts", price: 79, rating: 4.5, tag: "Classic", image: "images/cat_donut.png", hue: 42, desc: "Pillowy yeast donut dipped in shiny vanilla glaze. Simply iconic." },
-  { id: "choco-donut", name: "Chocolate Sprinkle Donut", cat: "Donuts", price: 89, rating: 4.6, tag: "Popular", image: "images/cat_donut.png", hue: 28, desc: "Chocolate-glazed ring showered with rainbow sprinkles." },
-  { id: "boston-cream", name: "Boston Cream Donut", cat: "Donuts", price: 109, rating: 4.8, tag: "Bestseller", image: "images/cat_donut.png", hue: 35, desc: "Filled with vanilla custard and topped with dark chocolate ganache." },
-  { id: "cinnamon-sugar-donut", name: "Cinnamon Sugar Donut", cat: "Donuts", price: 85, rating: 4.4, tag: "Eggless", image: "images/cat_donut.png", hue: 33, desc: "Warm cake donut rolled in fragrant cinnamon sugar." },
+  { id: "glazed-donut", name: "Classic Glazed Donut", cat: "Donuts", price: 79, rating: 4.5, tag: "Classic", image: "images/glazed-donut.png", hue: 42, desc: "Pillowy yeast donut dipped in shiny vanilla glaze. Simply iconic." },
+  { id: "choco-donut", name: "Chocolate Sprinkle Donut", cat: "Donuts", price: 89, rating: 4.6, tag: "Popular", image: "images/choco-donut.png", hue: 28, desc: "Chocolate-glazed ring showered with rainbow sprinkles." },
+  { id: "boston-cream", name: "Boston Cream Donut", cat: "Donuts", price: 109, rating: 4.8, tag: "Bestseller", image: "images/boston-cream.png", hue: 35, desc: "Filled with vanilla custard and topped with dark chocolate ganache." },
+  { id: "cinnamon-sugar-donut", name: "Cinnamon Sugar Donut", cat: "Donuts", price: 85, rating: 4.4, tag: "Eggless", image: "images/cinnamon-sugar-donut.png", hue: 33, desc: "Warm cake donut rolled in fragrant cinnamon sugar." },
   // ── Sandwiches ──
-  { id: "grilled-paneer", name: "Grilled Paneer Tikka Sandwich", cat: "Sandwiches", price: 189, rating: 4.7, tag: "Bestseller", image: "images/cat_sandwich.png", hue: 40, desc: "Smoky paneer tikka with mint chutney on toasted multigrain bread." },
-  { id: "veg-club", name: "Triple-Decker Veg Club", cat: "Sandwiches", price: 219, rating: 4.5, tag: "Popular", image: "images/cat_sandwich.png", hue: 90, desc: "Three layers of fresh veggies, cheese and herbed mayo on milk bread." },
-  { id: "cheese-corn", name: "Cheese & Corn Melt", cat: "Sandwiches", price: 169, rating: 4.6, tag: "Kids' Fav", image: "images/cat_sandwich.png", hue: 48, desc: "Golden sweet corn folded into molten mozzarella on sourdough." },
-  { id: "mushroom-panini", name: "Mushroom Truffle Panini", cat: "Sandwiches", price: 249, rating: 4.8, tag: "New", image: "images/cat_sandwich.png", hue: 30, desc: "Sautéed mushrooms, truffle oil and provolone pressed in focaccia." },
+  { id: "grilled-paneer", name: "Grilled Paneer Tikka Sandwich", cat: "Sandwiches", price: 189, rating: 4.7, tag: "Bestseller", image: "images/grilled-paneer.png", hue: 40, desc: "Smoky paneer tikka with mint chutney on toasted multigrain bread." },
+  { id: "veg-club", name: "Triple-Decker Veg Club", cat: "Sandwiches", price: 219, rating: 4.5, tag: "Popular", image: "images/veg-club.png", hue: 90, desc: "Three layers of fresh veggies, cheese and herbed mayo on milk bread." },
+  { id: "cheese-corn", name: "Cheese & Corn Melt", cat: "Sandwiches", price: 169, rating: 4.6, tag: "Kids' Fav", image: "images/cheese-corn.png", hue: 48, desc: "Golden sweet corn folded into molten mozzarella on sourdough." },
+  { id: "mushroom-panini", name: "Mushroom Truffle Panini", cat: "Sandwiches", price: 249, rating: 4.8, tag: "New", image: "images/mushroom-panini.png", hue: 30, desc: "Sautéed mushrooms, truffle oil and provolone pressed in focaccia." },
   // ── Beverages ──
-  { id: "cold-coffee", name: "Classic Cold Coffee", cat: "Beverages", price: 149, rating: 4.6, tag: "Popular", image: "images/cat_beverage.png", hue: 30, desc: "Slow-brewed coffee blended with vanilla ice cream and cocoa dust." },
-  { id: "hot-chocolate", name: "Belgian Hot Chocolate", cat: "Beverages", price: 179, rating: 4.9, tag: "Bestseller", image: "images/cat_beverage.png", hue: 25, desc: "Real melted Belgian couverture with steamed milk and marshmallows." },
-  { id: "masala-chai", name: "Bakery Masala Chai", cat: "Beverages", price: 89, rating: 4.5, tag: "Classic", image: "images/cat_beverage.png", hue: 35, desc: "Kadak chai brewed with our secret nine-spice masala blend." },
-  { id: "fresh-lemonade", name: "Mint Fresh Lemonade", cat: "Beverages", price: 99, rating: 4.4, tag: "Refreshing", image: "images/cat_beverage.png", hue: 55, desc: "Hand-pressed lemons with crushed mint and a whisper of honey." },
+  { id: "cold-coffee", name: "Classic Cold Coffee", cat: "Beverages", price: 149, rating: 4.6, tag: "Popular", image: "images/cold-coffee.png", hue: 30, desc: "Slow-brewed coffee blended with vanilla ice cream and cocoa dust." },
+  { id: "hot-chocolate", name: "Belgian Hot Chocolate", cat: "Beverages", price: 179, rating: 4.9, tag: "Bestseller", image: "images/hot-chocolate.png", hue: 25, desc: "Real melted Belgian couverture with steamed milk and marshmallows." },
+  { id: "masala-chai", name: "Bakery Masala Chai", cat: "Beverages", price: 89, rating: 4.5, tag: "Classic", image: "images/masala-chai.png", hue: 35, desc: "Kadak chai brewed with our secret nine-spice masala blend." },
+  { id: "fresh-lemonade", name: "Mint Fresh Lemonade", cat: "Beverages", price: 99, rating: 4.4, tag: "Refreshing", image: "images/fresh-lemonade.png", hue: 55, desc: "Hand-pressed lemons with crushed mint and a whisper of honey." },
 
 ];
 
