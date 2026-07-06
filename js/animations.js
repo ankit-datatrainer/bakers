@@ -1,4 +1,4 @@
-/* Fancy Baker — award-level animation layer
+/* Grace Bakers — award-level animation layer
    1. Kinetic Typography  — staggered char reveal on headings
    2. Scroll Reveal       — cinematic section storytelling (clip + parallax)
    3. Parallax Motion     — depth on images, chips and floating layers

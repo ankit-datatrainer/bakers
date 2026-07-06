@@ -1,72 +1,66 @@
-/* Fancy Baker — Menu data. Single source of truth for all products. */
+/* Grace Bakers — Menu data. Single source of truth for all products.
+   Categories: Cookies · Chocolates · Dry Cakes · Celebration Cakes · Brownies
+   (The client will add / replace products here later — the whole site reads from this file.) */
 const MENU_ITEMS = [
-  // ── Breads ──
-  { id: "sourdough-classic", name: "Classic Sourdough Loaf", cat: "Breads", price: 249, rating: 4.8, tag: "Bestseller", image: "images/sourdough_classic.png", hue: 38, desc: "48-hour fermented artisan sourdough with a crackling crust and airy crumb." },
-  { id: "multigrain-bread", name: "Honey Multigrain Bread", cat: "Breads", price: 199, rating: 4.6, tag: "Healthy", image: "images/multigrain_bread.png", hue: 32, desc: "Seven wholesome grains kissed with organic honey. Perfect for breakfast toast." },
-  { id: "garlic-baguette", name: "Garlic Herb Baguette", cat: "Breads", price: 179, rating: 4.7, tag: "New", image: "images/garlic_baguette.png", hue: 42, desc: "Crusty French baguette brushed with roasted garlic butter and fresh herbs." },
-  { id: "focaccia-rosemary", name: "Rosemary Focaccia", cat: "Breads", price: 229, rating: 4.5, tag: "Eggless", image: "images/focaccia_rosemary.png", hue: 45, desc: "Olive-oil rich Italian flatbread topped with rosemary and sea salt flakes." },
-  { id: "milk-bread", name: "Japanese Milk Bread", cat: "Breads", price: 189, rating: 4.9, tag: "Bestseller", image: "images/milk_bread.png", hue: 48, desc: "Cloud-soft shokupan made with tangzhong for the fluffiest slice in Delhi." },
-  // ── Cakes ──
-  { id: "choco-truffle", name: "Belgian Chocolate Truffle Cake", cat: "Cakes", price: 899, rating: 4.9, tag: "Bestseller", image: "images/choco_truffle.png", hue: 25, desc: "Layers of dark Belgian ganache on moist chocolate sponge. Pure decadence." },
-  { id: "red-velvet", name: "Red Velvet Cream Cheese Cake", cat: "Cakes", price: 849, rating: 4.8, tag: "Popular", image: "images/red_velvet.png", hue: 0, desc: "Velvety crimson sponge with silky cream-cheese frosting and white chocolate curls." },
-  { id: "pineapple-cake", name: "Fresh Pineapple Cake", cat: "Cakes", price: 649, rating: 4.6, tag: "Eggless", image: "images/pineapple-cake.png", hue: 50, desc: "Classic eggless pineapple cake with fresh fruit and whipped cream clouds." },
-  { id: "mango-mousse", name: "Alphonso Mango Mousse Cake", cat: "Cakes", price: 949, rating: 4.9, tag: "Seasonal", image: "images/mango-mousse.png", hue: 40, desc: "Airy mousse of Ratnagiri Alphonso mangoes on a vanilla génoise base." },
-  { id: "black-forest", name: "Black Forest Gateau", cat: "Cakes", price: 749, rating: 4.7, tag: "Classic", image: "images/black-forest.png", hue: 350, desc: "Cherries, chocolate shavings and kirsch-scented cream — the timeless favourite." },
-  { id: "butterscotch-cake", name: "Butterscotch Crunch Cake", cat: "Cakes", price: 699, rating: 4.6, tag: "Eggless", image: "images/butterscotch-cake.png", hue: 36, desc: "Caramel praline crunch folded through butterscotch cream on golden sponge." },
-  // ── Pastries ──
-  { id: "croissant-butter", name: "Pure Butter Croissant", cat: "Pastries", price: 129, rating: 4.8, tag: "Bestseller", image: "images/croissant-butter.png", hue: 40, desc: "27 flaky layers laminated with French butter. Baked fresh every morning." },
-  { id: "pain-au-chocolat", name: "Pain au Chocolat", cat: "Pastries", price: 149, rating: 4.9, tag: "Popular", image: "images/pain-au-chocolat.png", hue: 28, desc: "Buttery croissant dough wrapped around two batons of dark chocolate." },
-  { id: "danish-fruit", name: "Mixed Fruit Danish", cat: "Pastries", price: 139, rating: 4.5, tag: "New", image: "images/danish-fruit.png", hue: 15, desc: "Crisp Danish pastry crowned with custard and glazed seasonal fruits." },
-  { id: "eclair-choco", name: "Chocolate Éclair", cat: "Pastries", price: 119, rating: 4.7, tag: "Classic", image: "images/eclair-choco.png", hue: 30, desc: "Choux pastry filled with vanilla crème pâtissière, dipped in dark chocolate." },
   // ── Cookies ──
-  { id: "choco-chip-cookie", name: "Double Chocolate Chip Cookies", cat: "Cookies", price: 299, rating: 4.8, tag: "Bestseller", image: "images/choco-chip-cookie.png", hue: 30, desc: "Box of 6 chewy-centred cookies loaded with dark and milk chocolate chunks." },
-  { id: "oatmeal-raisin", name: "Oatmeal Raisin Cookies", cat: "Cookies", price: 249, rating: 4.4, tag: "Healthy", image: "images/oatmeal-raisin.png", hue: 35, desc: "Box of 6 wholesome oat cookies with plump raisins and a hint of cinnamon." },
-  { id: "butter-shortbread", name: "Scottish Butter Shortbread", cat: "Cookies", price: 279, rating: 4.6, tag: "Eggless", image: "images/butter-shortbread.png", hue: 45, desc: "Melt-in-mouth shortbread fingers made with pure white butter. Box of 8." },
-  { id: "almond-biscotti", name: "Almond Biscotti", cat: "Cookies", price: 329, rating: 4.5, tag: "New", image: "images/almond-biscotti.png", hue: 38, desc: "Twice-baked Italian biscotti with roasted almonds — perfect with coffee." },
-  // ── Cupcakes ──
-  { id: "vanilla-cupcake", name: "Vanilla Bean Cupcake", cat: "Cupcakes", price: 99, rating: 4.6, tag: "Classic", image: "images/vanilla-cupcake.png", hue: 48, desc: "Madagascar vanilla sponge with swirled buttercream and gold sprinkles." },
-  { id: "choco-cupcake", name: "Chocolate Fudge Cupcake", cat: "Cupcakes", price: 109, rating: 4.8, tag: "Bestseller", image: "images/choco-cupcake.png", hue: 25, desc: "Rich cocoa cupcake with a molten fudge core and chocolate buttercream." },
-  { id: "red-velvet-cupcake", name: "Red Velvet Cupcake", cat: "Cupcakes", price: 119, rating: 4.7, tag: "Popular", image: "images/red-velvet-cupcake.png", hue: 355, desc: "Mini red velvet with cream-cheese frosting and a white chocolate heart." },
-  // ── Donuts ──
-  { id: "glazed-donut", name: "Classic Glazed Donut", cat: "Donuts", price: 79, rating: 4.5, tag: "Classic", image: "images/glazed-donut.png", hue: 42, desc: "Pillowy yeast donut dipped in shiny vanilla glaze. Simply iconic." },
-  { id: "choco-donut", name: "Chocolate Sprinkle Donut", cat: "Donuts", price: 89, rating: 4.6, tag: "Popular", image: "images/choco-donut.png", hue: 28, desc: "Chocolate-glazed ring showered with rainbow sprinkles." },
-  { id: "boston-cream", name: "Boston Cream Donut", cat: "Donuts", price: 109, rating: 4.8, tag: "Bestseller", image: "images/boston-cream.png", hue: 35, desc: "Filled with vanilla custard and topped with dark chocolate ganache." },
-  { id: "cinnamon-sugar-donut", name: "Cinnamon Sugar Donut", cat: "Donuts", price: 85, rating: 4.4, tag: "Eggless", image: "images/cinnamon-sugar-donut.png", hue: 33, desc: "Warm cake donut rolled in fragrant cinnamon sugar." },
-  // ── Sandwiches ──
-  { id: "grilled-paneer", name: "Grilled Paneer Tikka Sandwich", cat: "Sandwiches", price: 189, rating: 4.7, tag: "Bestseller", image: "images/grilled-paneer.png", hue: 40, desc: "Smoky paneer tikka with mint chutney on toasted multigrain bread." },
-  { id: "veg-club", name: "Triple-Decker Veg Club", cat: "Sandwiches", price: 219, rating: 4.5, tag: "Popular", image: "images/veg-club.png", hue: 90, desc: "Three layers of fresh veggies, cheese and herbed mayo on milk bread." },
-  { id: "cheese-corn", name: "Cheese & Corn Melt", cat: "Sandwiches", price: 169, rating: 4.6, tag: "Kids' Fav", image: "images/cheese-corn.png", hue: 48, desc: "Golden sweet corn folded into molten mozzarella on sourdough." },
-  { id: "mushroom-panini", name: "Mushroom Truffle Panini", cat: "Sandwiches", price: 249, rating: 4.8, tag: "New", image: "images/mushroom-panini.png", hue: 30, desc: "Sautéed mushrooms, truffle oil and provolone pressed in focaccia." },
-  // ── Beverages ──
-  { id: "cold-coffee", name: "Classic Cold Coffee", cat: "Beverages", price: 149, rating: 4.6, tag: "Popular", image: "images/cold-coffee.png", hue: 30, desc: "Slow-brewed coffee blended with vanilla ice cream and cocoa dust." },
-  { id: "hot-chocolate", name: "Belgian Hot Chocolate", cat: "Beverages", price: 179, rating: 4.9, tag: "Bestseller", image: "images/hot-chocolate.png", hue: 25, desc: "Real melted Belgian couverture with steamed milk and marshmallows." },
-  { id: "masala-chai", name: "Bakery Masala Chai", cat: "Beverages", price: 89, rating: 4.5, tag: "Classic", image: "images/masala-chai.png", hue: 35, desc: "Kadak chai brewed with our secret nine-spice masala blend." },
-  { id: "fresh-lemonade", name: "Mint Fresh Lemonade", cat: "Beverages", price: 99, rating: 4.4, tag: "Refreshing", image: "images/fresh-lemonade.png", hue: 55, desc: "Hand-pressed lemons with crushed mint and a whisper of honey." },
+  { id: "choco-chip-cookie", name: "Double Chocolate Chip Cookies", cat: "Cookies", price: 299, rating: 4.9, tag: "Bestseller", image: "images/choco-chip-cookie.png", hue: 30, desc: "Box of 6 chewy-centred cookies loaded with dark and milk chocolate chunks." },
+  { id: "oatmeal-raisin", name: "Oatmeal Raisin Cookies", cat: "Cookies", price: 249, rating: 4.5, tag: "Wholesome", image: "images/oatmeal-raisin.png", hue: 35, desc: "Box of 6 hearty oat cookies with plump raisins and a hint of cinnamon." },
+  { id: "butter-shortbread", name: "Melt-in-Mouth Butter Cookies", cat: "Cookies", price: 279, rating: 4.7, tag: "Eggless", image: "images/butter-shortbread.png", hue: 45, desc: "Buttery shortbread fingers that dissolve on the tongue. Box of 8." },
+  { id: "almond-biscotti", name: "Almond Biscotti", cat: "Cookies", price: 329, rating: 4.6, tag: "New", image: "images/almond-biscotti.png", hue: 38, desc: "Twice-baked Italian biscotti with roasted almonds — perfect with coffee or tea." },
+  { id: "red-velvet-cookie", name: "Red Velvet Cookies", cat: "Cookies", price: 319, rating: 4.8, tag: "Popular", image: "images/cat_cookie.png", hue: 355, desc: "Soft red velvet cookies studded with white chocolate chips. Box of 6." },
 
+  // ── Chocolates ──
+  { id: "assorted-truffles", name: "Assorted Chocolate Truffles", cat: "Chocolates", price: 499, rating: 4.9, tag: "Bestseller", image: "images/choco_truffle.png", hue: 25, desc: "A hand-rolled box of 9 truffles — dark, milk and hazelnut ganache centres." },
+  { id: "hazelnut-pralines", name: "Hazelnut Pralines", cat: "Chocolates", price: 549, rating: 4.8, tag: "Premium", image: "images/eclair-choco.png", hue: 28, desc: "Roasted hazelnut praline filled in smooth Belgian couverture. Box of 8." },
+  { id: "choco-dipped-berries", name: "Chocolate-Dipped Delights", cat: "Chocolates", price: 459, rating: 4.7, tag: "New", image: "images/boston-cream.png", hue: 20, desc: "Seasonal treats hand-dipped in glossy dark chocolate — a little box of joy." },
+  { id: "dark-chocolate-bark", name: "Dark Chocolate Bark", cat: "Chocolates", price: 399, rating: 4.6, tag: "Vegan", image: "images/choco-donut.png", hue: 22, desc: "70% dark chocolate slab loaded with almonds, cranberries and sea salt." },
+  { id: "hot-chocolate-jar", name: "Sipping Hot Chocolate Jar", cat: "Chocolates", price: 349, rating: 4.8, tag: "Gift", image: "images/hot-chocolate.png", hue: 25, desc: "Real melted couverture flakes in a jar — just add warm milk for café-style cocoa." },
+
+  // ── Dry Cakes ──
+  { id: "vanilla-pound-cake", name: "Classic Vanilla Pound Cake", cat: "Dry Cakes", price: 349, rating: 4.7, tag: "Classic", image: "images/vanilla-cupcake.png", hue: 48, desc: "Buttery Madagascar-vanilla tea cake — the everyday loaf that never disappoints." },
+  { id: "marble-tea-cake", name: "Marble Tea Cake", cat: "Dry Cakes", price: 379, rating: 4.6, tag: "Popular", image: "images/butterscotch-cake.png", hue: 30, desc: "Swirls of vanilla and cocoa sponge in a soft, sliceable loaf." },
+  { id: "almond-orange-loaf", name: "Almond & Orange Loaf", cat: "Dry Cakes", price: 419, rating: 4.8, tag: "Eggless", image: "images/milk_bread.png", hue: 40, desc: "Moist orange-scented cake topped with toasted almond flakes." },
+  { id: "banana-walnut-cake", name: "Banana Walnut Cake", cat: "Dry Cakes", price: 389, rating: 4.7, tag: "Wholesome", image: "images/multigrain_bread.png", hue: 36, desc: "Ripe banana loaf folded with crunchy walnuts — a teatime favourite." },
+  { id: "lemon-drizzle-loaf", name: "Lemon Drizzle Loaf", cat: "Dry Cakes", price: 369, rating: 4.6, tag: "New", image: "images/pineapple-cake.png", hue: 55, desc: "Zesty lemon sponge soaked in tangy citrus syrup and a sugar glaze." },
+
+  // ── Celebration Cakes ──
+  { id: "choco-truffle", name: "Belgian Chocolate Truffle Cake", cat: "Celebration Cakes", price: 899, rating: 4.9, tag: "Bestseller", image: "images/choco_truffle.png", hue: 25, desc: "Layers of dark Belgian ganache on moist chocolate sponge. Pure decadence — 500g." },
+  { id: "red-velvet", name: "Red Velvet Cream Cheese Cake", cat: "Celebration Cakes", price: 849, rating: 4.8, tag: "Popular", image: "images/red_velvet.png", hue: 0, desc: "Velvety crimson sponge with silky cream-cheese frosting and white chocolate curls." },
+  { id: "black-forest", name: "Black Forest Gateau", cat: "Celebration Cakes", price: 749, rating: 4.7, tag: "Classic", image: "images/black-forest.png", hue: 350, desc: "Cherries, chocolate shavings and fresh cream — the timeless celebration classic." },
+  { id: "mango-mousse", name: "Alphonso Mango Mousse Cake", cat: "Celebration Cakes", price: 949, rating: 4.9, tag: "Seasonal", image: "images/mango-mousse.png", hue: 40, desc: "Airy mousse of Ratnagiri Alphonso mangoes on a soft vanilla génoise base." },
+  { id: "pineapple-cake", name: "Fresh Pineapple Cake", cat: "Celebration Cakes", price: 649, rating: 4.6, tag: "Eggless", image: "images/pineapple-cake.png", hue: 50, desc: "Classic eggless pineapple cake with fresh fruit and whipped cream clouds." },
+  { id: "custom-theme-cake", name: "Custom Theme Cake", cat: "Celebration Cakes", price: 1199, rating: 5.0, tag: "Made to Order", image: "images/hero_cake.png", hue: 45, desc: "Birthdays, weddings, anniversaries — share your dream and we'll bake it to life." },
+
+  // ── Brownies ──
+  { id: "classic-fudge-brownie", name: "Classic Fudge Brownie", cat: "Brownies", price: 259, rating: 4.9, tag: "Bestseller", image: "images/choco-cupcake.png", hue: 25, desc: "Dense, gooey-centred chocolate brownie with a crackly top. Box of 4." },
+  { id: "walnut-brownie", name: "Walnut Brownie", cat: "Brownies", price: 289, rating: 4.8, tag: "Popular", image: "images/choco_truffle.png", hue: 28, desc: "Rich fudge brownie packed with toasted California walnuts. Box of 4." },
+  { id: "salted-caramel-brownie", name: "Salted Caramel Brownie", cat: "Brownies", price: 319, rating: 4.9, tag: "New", image: "images/eclair-choco.png", hue: 30, desc: "Molten salted-caramel swirl through our signature fudge brownie. Box of 4." },
+  { id: "nutella-brownie", name: "Nutella Stuffed Brownie", cat: "Brownies", price: 339, rating: 4.8, tag: "Kids' Fav", image: "images/boston-cream.png", hue: 24, desc: "Oozing hazelnut-chocolate centre in a decadent brownie. Box of 4." },
+  { id: "brownie-gift-box", name: "Assorted Brownie Gift Box", cat: "Brownies", price: 599, rating: 4.9, tag: "Gift", image: "images/cat_cake.png", hue: 26, desc: "A curated box of 8 brownies across all our flavours — the perfect gift." },
 ];
 
-const MENU_CATEGORIES = ["All", "Breads", "Cakes", "Pastries", "Cookies", "Cupcakes", "Donuts", "Sandwiches", "Beverages"];
+const MENU_CATEGORIES = ["All", "Cookies", "Chocolates", "Dry Cakes", "Celebration Cakes", "Brownies"];
 
 function findItem(id) { return MENU_ITEMS.find(i => i.id === id); }
 function formatINR(n) { return "₹" + n.toLocaleString("en-IN"); }
 
 const REVIEWS = [
-  { name: "Priya Sharma", loc: "Rohini Sector 9", initial: "PS", stars: 5, text: "The Belgian truffle cake for my daughter's birthday was the best cake we've ever had. Moist, rich, and it arrived perfectly packed." },
-  { name: "Arjun Khanna", loc: "Pitampura", initial: "AK", stars: 5, text: "Their sourdough is honestly better than anything I had in Europe. I order two loaves every weekend without fail." },
-  { name: "Neha Gupta", loc: "Rohini Sector 3", initial: "NG", stars: 5, text: "Ordered a custom theme cake with 2 days' notice — the team nailed the design and it tasted even better than it looked!" },
-  { name: "Rahul Verma", loc: "Shalimar Bagh", initial: "RV", stars: 5, text: "The Japanese Milk Bread is so soft it practically melts in your mouth. Best bakery in North Delhi!" },
-  { name: "Sneha Iyer", loc: "Ashok Vihar", initial: "SI", stars: 5, text: "Those Double Chocolate Chip Cookies are dangerous. I bought a box of 6 and finished them in one sitting." },
-  { name: "Vikas Singh", loc: "Paschim Vihar", initial: "VS", stars: 4, text: "Great garlic baguette. Paired it with pasta and it was an absolute hit with the family." },
-  { name: "Anjali Desai", loc: "Rohini Sector 13", initial: "AD", stars: 5, text: "I can't recommend the Red Velvet Cream Cheese Cake enough. The frosting is perfectly balanced, not overly sweet." },
-  { name: "Rajat Kapoor", loc: "Model Town", initial: "RK", stars: 5, text: "Sunday mornings are incomplete without their Pure Butter Croissants. Flaky, buttery perfection." },
-  { name: "Simran Kaur", loc: "Kohat Enclave", initial: "SK", stars: 5, text: "The Mango Mousse Cake was a revelation! So light and airy, and packed with real Alphonso flavor." },
-  { name: "Karan Mehta", loc: "Rohini Sector 7", initial: "KM", stars: 5, text: "Walking past this bakery every morning is a test of willpower. Their Grilled Paneer Sandwich is my go-to breakfast." },
-  { name: "Meera Reddy", loc: "Civil Lines", initial: "MR", stars: 5, text: "Ordered a dessert hamper for Diwali and the packaging was just as premium as the baked goods inside." },
-  { name: "Amit Joshi", loc: "Prashant Vihar", initial: "AJ", stars: 5, text: "Finally, a place that makes authentic Italian Focaccia. The rosemary aroma is incredible." },
-  { name: "Pooja Chawla", loc: "Rohini Sector 11", initial: "PC", stars: 5, text: "My kids absolutely love the Cheese & Corn Melt. It's a lifesaver for quick, delicious evening snacks." },
-  { name: "Siddharth Jain", loc: "Kamla Nagar", initial: "SJ", stars: 4, text: "Their Cold Coffee is thick, creamy, and has just the right kick of caffeine. Highly recommended." },
-  { name: "Divya Patel", loc: "Rohini Sector 8", initial: "DP", stars: 5, text: "The Pain au Chocolat reminds me of my time in Paris. Seriously, it's that good." },
-  { name: "Gaurav Sharma", loc: "Mangolpuri", initial: "GS", stars: 5, text: "We ordered the Black Forest Gateau for our anniversary. Classic taste, totally fresh cherries." },
-  { name: "Ritu Malhotra", loc: "Punjabi Bagh", initial: "RM", stars: 5, text: "I've tried every eggless cake on their menu, and the Pineapple Cake is an absolute standout." },
-  { name: "Aditya Roy", loc: "Rohini Sector 15", initial: "AR", stars: 5, text: "The Boston Cream Donut is generously filled and always fresh. It's my guilty pleasure!" }
+  { name: "Priya Sharma", loc: "Rohini, Delhi", initial: "PS", stars: 5, text: "The Belgian truffle cake for my daughter's birthday was the best cake we've ever had. Moist, rich, and it arrived perfectly packed." },
+  { name: "Arjun Khanna", loc: "Dwarka, Delhi", initial: "AK", stars: 5, text: "Grace Bakers' brownies are honestly addictive. I order a box every weekend without fail — always fresh, always gooey." },
+  { name: "Neha Gupta", loc: "Saket, Delhi", initial: "NG", stars: 5, text: "Ordered a custom theme cake with 2 days' notice — the team nailed the design and it tasted even better than it looked!" },
+  { name: "Rahul Verma", loc: "Lajpat Nagar, Delhi", initial: "RV", stars: 5, text: "Their chocolate truffles are pure luxury. Best gift box I've sent this festive season. Delivery was quick too." },
+  { name: "Sneha Iyer", loc: "Vasant Kunj, Delhi", initial: "SI", stars: 5, text: "Those Double Chocolate Chip Cookies are dangerous. I bought a box of 6 and finished them in one sitting." },
+  { name: "Vikas Singh", loc: "Janakpuri, Delhi", initial: "VS", stars: 4, text: "Great vanilla pound cake with my evening chai. Loved that it stayed soft for days. Family favourite now." },
+  { name: "Anjali Desai", loc: "Preet Vihar, Delhi", initial: "AD", stars: 5, text: "I can't recommend the Red Velvet Cream Cheese Cake enough. The frosting is perfectly balanced, not overly sweet." },
+  { name: "Rajat Kapoor", loc: "Karol Bagh, Delhi", initial: "RK", stars: 5, text: "Sunday teatime is incomplete without Grace Bakers' cookies. Everything is freshly baked and beautifully packed." },
+  { name: "Simran Kaur", loc: "Punjabi Bagh, Delhi", initial: "SK", stars: 5, text: "The Mango Mousse Cake was a revelation! So light and airy, and packed with real Alphonso flavour." },
+  { name: "Kavya Mehta", loc: "Mayur Vihar, Delhi", initial: "KM", stars: 5, text: "Ordered brownies for an office party and everyone kept asking where they were from. Grace Bakers it is, forever." },
+  { name: "Meera Reddy", loc: "Greater Kailash, Delhi", initial: "MR", stars: 5, text: "Ordered a chocolate gift hamper for Diwali and the packaging was just as premium as the treats inside." },
+  { name: "Amrita Joshi", loc: "Pitampura, Delhi", initial: "AJ", stars: 5, text: "The salted caramel brownie is unreal — molten centre and a crackly top. Delivered warm and on time." },
+  { name: "Pooja Chawla", loc: "Rajouri Garden, Delhi", initial: "PC", stars: 5, text: "My kids absolutely love the Nutella stuffed brownies. It's my go-to for their little celebrations." },
+  { name: "Shreya Jain", loc: "Model Town, Delhi", initial: "SJ", stars: 4, text: "Clean, hygienic, and premium quality. The lemon drizzle loaf is my new teatime obsession." },
+  { name: "Divya Patel", loc: "Kalkaji, Delhi", initial: "DP", stars: 5, text: "The hazelnut pralines melt in your mouth. Ordered again within a week — that good." },
+  { name: "Gaurav Sharma", loc: "Paschim Vihar, Delhi", initial: "GS", stars: 5, text: "We ordered the Black Forest cake for our anniversary. Classic taste, fresh cherries, delivered right on schedule." },
+  { name: "Ritu Malhotra", loc: "Uttam Nagar, Delhi", initial: "RM", stars: 5, text: "I've tried every eggless cake on their menu, and the Pineapple Cake is an absolute standout." },
+  { name: "Aditi Roy", loc: "Shalimar Bagh, Delhi", initial: "AR", stars: 5, text: "Fast delivery all across Delhi and the treats always arrive fresh. Grace Bakers never misses!" },
 ];

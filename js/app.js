@@ -1,8 +1,8 @@
-/* Fancy Baker — shared layout, cart, animations, page logic */
+/* Grace Bakers — shared layout, cart, animations, page logic */
 (function () {
   "use strict";
 
-  const WHATSAPP = "https://wa.me/917428720768?text=" + encodeURIComponent("Hi Fancy Baker! I'd like to place an order.");
+  const WHATSAPP = "https://wa.me/919873794680?text=" + encodeURIComponent("Hi Grace Bakers! I'd like to place an order.");
   const PAGE = document.body.dataset.page || "";
   const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -46,7 +46,7 @@
     header.className = "site-header";
     header.innerHTML = `
       <div class="header-inner">
-        <a class="logo" href="index.html"><img src="images/bakery_logo.png" class="logo-badge" alt="Logo" style="width:28px;height:28px;object-fit:cover;vertical-align:middle;margin-right:8px;border-radius:50%;">Fancy Baker</a>
+        <a class="logo" href="index.html"><img src="images/bakery_logo.png" class="logo-badge" alt="Logo" style="width:28px;height:28px;object-fit:cover;vertical-align:middle;margin-right:8px;border-radius:50%;">Grace Bakers</a>
         <nav class="main-nav" aria-label="Main">
           ${NAV.map(([href, label]) => `<a href="${href}" ${PAGE === href.replace(".html", "") ? 'class="active"' : ""}>${label}</a>`).join("")}
         </nav>
@@ -159,14 +159,14 @@
     footer.innerHTML = `
       <div class="footer-cta">
         <h2>Craving something sweet?</h2>
-        <p>Freshly baked happiness, delivered across Rohini in under 60 minutes.</p>
+        <p>Freshly baked and safely delivered, all over Delhi.</p>
         <a class="btn btn-dark" href="menu.html">Browse the Menu</a>
       </div>
       <div class="container">
         <div class="footer-main">
           <div class="footer-brand">
-            <a class="logo" href="index.html"><img src="images/bakery_logo.png" class="logo-badge" alt="Logo" style="width:28px;height:28px;object-fit:cover;vertical-align:middle;margin-right:8px;border-radius:50%;">Fancy Baker</a>
-            <p>Handcrafted breads, cakes and pastries baked fresh every morning in Rohini, New Delhi — since 2015.</p>
+            <a class="logo" href="index.html"><img src="images/bakery_logo.png" class="logo-badge" alt="Logo" style="width:28px;height:28px;object-fit:cover;vertical-align:middle;margin-right:8px;border-radius:50%;">Grace Bakers</a>
+            <p>Baking dreams into reality — dreamy cakes, cookies, chocolates and brownies, freshly baked with love and delivered all over Delhi.</p>
             <div class="socials">
               <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
               <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
@@ -178,7 +178,7 @@
             <h4>Explore</h4>
             <ul>
               <li><a href="menu.html">Full Menu</a></li><li><a href="about.html">About Us</a></li>
-              <li><a href="gallery.html">Our Bakes</a></li><li><a href="blog.html">Blog & Recipes</a></li>
+              <li><a href="gallery.html">Our Bakes</a></li><li><a href="blog.html">Blog</a></li>
               <li><a href="track.html">Track Order</a></li>
             </ul>
           </div>
@@ -203,10 +203,10 @@
               <span style="display:flex; align-items:center; gap:6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> RUPAY</span>
               <span style="display:flex; align-items:center; gap:6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg> COD</span>
             </div>
-            <p style="font-size:0.85rem;margin-top:18px;opacity:0.75">📍 Sector 7, Rohini, New Delhi 110085<br>📞 +91 7428 720 768 · ✉️ hello@fancybaker.in</p>
+            <p style="font-size:0.85rem;margin-top:18px;opacity:0.75">🚚 Delivering all over Delhi<br>📞 +91 98737 94680 · ✉️ gracebakersofficial@gmail.com</p>
           </div>
         </div>
-        <div class="footer-bottom">© ${new Date().getFullYear()} Fancy Baker. Baked with ❤️ in New Delhi. All rights reserved.</div>
+        <div class="footer-bottom">© ${new Date().getFullYear()} Grace Bakers. Baked with ❤️ in New Delhi. All rights reserved.</div>
       </div>`;
     document.body.appendChild(footer);
     document.getElementById("newsletter-form").addEventListener("submit", e => {
@@ -346,7 +346,7 @@
     if (!wrap) return;
     const id = new URLSearchParams(location.search).get("id");
     const item = findItem(id) || MENU_ITEMS[0];
-    document.title = `${item.name} — Fancy Baker`;
+    document.title = `${item.name} — Grace Bakers`;
     wrap.innerHTML = `
       <div class="split">
         <div class="visual reveal" style="${tileBG(item)}; overflow:hidden;"><img src="${item.image}" alt="${item.name}" style="width:100%;height:100%;object-fit:cover;"></div>
@@ -363,9 +363,9 @@
             <button class="btn btn-primary" id="pd-add">Add to Cart</button>
           </div>
           <ul style="margin-top:28px;padding-left:20px;color:var(--brown-soft);font-size:0.92rem;display:grid;gap:6px">
-            <li>Baked fresh on the day of delivery</li>
-            <li>Delivery across Rohini in under 60 minutes</li>
-            <li>100% vegetarian kitchen · FSSAI certified</li>
+            <li>Freshly baked with premium ingredients</li>
+            <li>Safely delivered all over Delhi</li>
+            <li>Customization available — just ask!</li>
           </ul>
         </div>
       </div>
@@ -419,7 +419,7 @@
     document.getElementById("checkout-form").addEventListener("submit", e => {
       e.preventDefault();
       if (Cart.count() === 0) { toast("🧺 Your basket is empty — add something first!"); return; }
-      const orderId = "FB" + Math.random().toString(36).slice(2, 8).toUpperCase();
+      const orderId = "GB" + Math.random().toString(36).slice(2, 8).toUpperCase();
       localStorage.setItem("fb_last_order", JSON.stringify({ id: orderId, at: Date.now(), total: document.getElementById("sum-total").textContent }));
       Cart.clear();
       location.href = "track.html?order=" + orderId + "&placed=1";
@@ -474,14 +474,26 @@
     if (PAGE !== "index") return;
     const featured = document.getElementById("featured-grid");
     if (featured) {
-      const picks = MENU_ITEMS.filter(i => i.tag === "Bestseller").slice(0, 8);
-      featured.innerHTML = picks.map(cardHTML).join("");
+      // One standout per category, so Best Sellers spans the whole range
+      const seen = new Set();
+      const picks = MENU_ITEMS.filter(i => i.tag === "Bestseller" && !seen.has(i.cat) && seen.add(i.cat));
+      const list = (picks.length >= 4 ? picks : MENU_ITEMS.filter(i => i.tag === "Bestseller")).slice(0, 8);
+      featured.innerHTML = list.map(cardHTML).join("");
+    }
+    const featuredNew = document.getElementById("featured-new-grid");
+    if (featuredNew) {
+      const fresh = MENU_ITEMS.filter(i => ["New", "Seasonal", "Premium", "Made to Order"].includes(i.tag)).slice(0, 4);
+      const list = (fresh.length ? fresh : MENU_ITEMS.slice(0, 4));
+      featuredNew.innerHTML = list.map(cardHTML).join("");
     }
     const cats = document.getElementById("cat-grid");
     if (cats) {
       const catMeta = {
-        Breads: "cat_bread.png", Cakes: "cat_cake.png", Pastries: "cat_pastry.png", Cookies: "cat_cookie.png", Cupcakes: "cat_cake.png",
-        Donuts: "cat_donut.png", Sandwiches: "cat_sandwich.png", Beverages: "cat_beverage.png"
+        "Cookies": "choco-chip-cookie.png",
+        "Chocolates": "choco_truffle.png",
+        "Dry Cakes": "butterscotch-cake.png",
+        "Celebration Cakes": "red_velvet.png",
+        "Brownies": "choco-cupcake.png",
       };
       cats.innerHTML = Object.entries(catMeta).map(([c, img]) => `
         <a class="feature-card reveal" href="menu.html?cat=${encodeURIComponent(c)}">
@@ -518,6 +530,12 @@
       e.preventDefault();
       toast("💌 Message sent! We'll reply within 24 hours.");
       cf.reset();
+    });
+    const inq = document.getElementById("inquiry-form");
+    if (inq) inq.addEventListener("submit", e => {
+      e.preventDefault();
+      toast("✨ Inquiry sent! Our team will reach out shortly.");
+      inq.reset();
     });
   }
 
