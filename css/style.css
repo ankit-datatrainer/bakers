@@ -203,13 +203,50 @@ p { margin: 0 0 1em; }
 }
 .hero p.lead { font-size: 1.15rem; color: var(--brown-soft); max-width: 480px; margin-bottom: 32px; }
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* Instagram badge — live link to the bakery's profile */
+.insta-badge {
+  display: inline-flex; align-items: center; gap: 12px; margin-top: 22px;
+  padding: 10px 20px 10px 12px; border-radius: 999px; background: var(--white);
+  border: 1.5px solid rgba(43, 32, 24, 0.35); box-shadow: 3px 3px 0 rgba(43, 32, 24, 0.85);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s;
+}
+.insta-badge:hover { transform: translateY(-3px); box-shadow: 5px 5px 0 rgba(43, 32, 24, 0.85); }
+.insta-badge:active { transform: translateY(0); box-shadow: 1px 1px 0 rgba(43, 32, 24, 0.85); }
+.insta-ico {
+  width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #fff;
+  background: linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
+}
+.insta-text { display: flex; flex-direction: column; line-height: 1.25; }
+.insta-text b { font-family: var(--font-display); font-size: 0.95rem; color: var(--brown); }
+.insta-text small { font-size: 0.72rem; font-weight: 600; color: var(--brown-muted); letter-spacing: 0.04em; text-transform: uppercase; }
+.insta-arrow { font-weight: 800; color: #ee2a7b; transition: transform 0.25s; }
+.insta-badge:hover .insta-arrow { transform: translateX(4px); }
+.socials .social-insta:hover { background: linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%); color: #fff; }
 .hero-visual { position: relative; display: grid; place-items: center; }
-.hero-cake {
-  width: min(380px, 80vw); aspect-ratio: 1; border-radius: 50%;
-  background: var(--yellow-glow); border: 2px solid var(--brown);
-  display: grid; place-items: center; font-size: clamp(6rem, 14vw, 10rem);
-  box-shadow: 10px 10px 0 rgba(43, 32, 24, 0.9);
+.hero-collage {
+  position: relative; width: min(440px, 90vw); aspect-ratio: 1;
+}
+.collage-img {
+  position: absolute;
+  border-radius: 24px;
+  border: 3px solid var(--white);
+  box-shadow: 8px 8px 0 rgba(43, 32, 24, 0.85);
+  overflow: hidden;
+  background: var(--yellow-glow);
+}
+.collage-img img { width: 100%; height: 100%; object-fit: cover; }
+.collage-img.main {
+  width: 62%; aspect-ratio: 4/5; top: 0; right: 5%; z-index: 2;
   animation: floaty 6s ease-in-out infinite;
+}
+.collage-img.sub1 {
+  width: 52%; aspect-ratio: 1; bottom: 5%; left: 0; z-index: 3; border-radius: 50%;
+  animation: floaty 7s ease-in-out infinite 1s;
+}
+.collage-img.sub2 {
+  width: 42%; aspect-ratio: 1; top: 15%; left: 8%; z-index: 1; border-radius: 50%;
+  animation: floaty 5.5s ease-in-out infinite 0.5s;
 }
 @keyframes floaty { 50% { transform: translateY(-18px) rotate(2deg); } }
 .hero-chip {
@@ -647,7 +684,32 @@ p { margin: 0 0 1em; }
   .header-inner { gap: 8px; padding: 0 16px; justify-content: space-between; }
   .logo { font-size: 1.15rem; gap: 6px; }
   .logo .logo-badge { width: 22px !important; height: 22px !important; }
-  .header-actions { gap: 8px; margin-left: 0; }}
+  .header-actions { gap: 8px; margin-left: 0; }
+  /* CTA buttons share rows evenly instead of wrapping awkwardly */
+  .hero-cta { gap: 10px; }
+  .hero-cta .btn { flex: 1 1 auto; min-width: 130px; padding: 12px 18px; font-size: 0.88rem; }
+  .tagline-badge { font-size: 0.85rem; padding: 7px 14px; }
+  .insta-badge { width: 100%; justify-content: center; }
+  .marquee { padding: 14px 0; }
+  .marquee-chip { font-size: 0.82rem; padding: 8px 16px; gap: 6px; }
+  .section-head { margin-bottom: 36px; }
+  .section-head h2 { font-size: clamp(1.6rem, 6.5vw, 2rem); }
+  .page-hero { padding: calc(var(--header-h) + 40px) 0 40px; }
+  .page-hero h1 { font-size: clamp(1.8rem, 7.5vw, 2.6rem); }
+  .hero h1 { font-size: clamp(2rem, 8.5vw, 2.6rem); }
+  .card-grid { grid-template-columns: 1fr; gap: 18px; }
+  .feature-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .feature-card { padding: 22px 14px; }
+  .feature-card .ico { width: 54px; height: 54px; }
+  .filter-chip { padding: 9px 15px; font-size: 0.82rem; }
+  .footer-main { padding: 44px 0 32px; gap: 28px; }
+  .reviews-hint { font-size: 0.7rem; }
+  .qty-ctrl button { width: 34px; height: 34px; } /* comfier tap targets */
+}
+@media (max-width: 400px) {
+  .hero-cta .btn { min-width: 100%; } /* stack CTAs on very narrow phones */
+  .feature-grid { grid-template-columns: 1fr; }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
