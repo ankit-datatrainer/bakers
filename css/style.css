@@ -732,3 +732,21 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* --- Global Smooth Floating Card UI --- */
+@keyframes continuousFloat {
+  0% { transform: translateY(0); box-shadow: var(--shadow-sm); }
+  50% { transform: translateY(-12px); box-shadow: 0 22px 44px rgba(43, 32, 24, 0.15); }
+  100% { transform: translateY(0); box-shadow: var(--shadow-sm); }
+}
+
+.item-card, .feature-card, .testi-card, .blog-card, .bestseller-box {
+  animation: continuousFloat 4s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+@media (hover: hover) {
+  .item-card:hover, .feature-card:hover, .testi-card:hover, .blog-card:hover, .bestseller-box:hover {
+    animation-play-state: paused;
+  }
+}
